@@ -1,3 +1,8 @@
+# Instructions for working with this repo:
+
+- Main branch: production-ready site that gets deployed. Merging should only happen from development to master.
+- Feature branches: Each developer should make a new branch for their work from the development branch in the following format: cari-feature-name. Make a pull request into develop after your work has been completed. Please note that new experimental changes to your code should not be made when a PR is open.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
