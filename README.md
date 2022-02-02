@@ -3,6 +3,11 @@
 - Main branch: production-ready site that gets deployed. Merging should only happen from development to master.
 - Feature branches: Each developer should make a new branch for their work from the development branch in the following format: cari-feature-name. Make a pull request into develop after your work has been completed. Please note that new experimental changes to your code should not be made when a PR is open.
 
+# Resources
+- [React Docs](https://reactjs.org/docs/getting-started.html)
+- [MUI Components](https://mui.com/)
+- [Figma Wireframes](https://www.figma.com/file/EbYsIE3crWNcXvvQRDCmO8/SEL-Prototype?node-id=229%3A1638)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
