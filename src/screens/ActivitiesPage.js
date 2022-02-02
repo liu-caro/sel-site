@@ -1,9 +1,9 @@
-const ExamplePage = () => {
+const ActivitiesPage = () => {
   return (
       <>
-      This is an example page. 
+      This is the Activities page. 
       </>
   );
 };
 
-export default ExamplePage;
+export default ActivitiesPage;
