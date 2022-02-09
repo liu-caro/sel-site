@@ -8,6 +8,7 @@ const RSCountMeDownActivity = () => {
       container
       direction="column"
       justifyContent="center"
+      alignItems="center"
       spacing={2}
       p={8}
     >
