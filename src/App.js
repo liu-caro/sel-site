@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ThemeProvider } from '@mui/system';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuBar from './components/MenuBar';
@@ -11,6 +12,20 @@ import RSCountMeDownActivity from './screens/RelationshipSkillsActivities/RSCoun
 import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
 import { theme } from './utils/theme';
+=======
+import { ThemeProvider } from "@mui/system";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Drawer from "./components/drawer/Drawer";
+import HomePage from "./screens/HomePage";
+import ActivitiesPage from "./screens/ActivitiesPage";
+import ExamplePage from "./screens/ExamplePage";
+import RSCountMeDownActivity from "./screens/RelationshipSkillsActivities/RSCountMeDownActivity";
+import OnboardingWelcomePage from "./screens/OnboardingPages/OnboardingWelcomePage";
+import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivitiesPage";
+import OnboardingPrintablesPage from "./screens/OnboardingPages/OnboardingPrintablesPage";
+import LandingPage from "./screens/LandingPage";
+import { theme } from "./utils/theme";
+>>>>>>> a32f13c (added Onboarding pages)
 
 const App = () => {
   return (
