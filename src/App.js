@@ -15,6 +15,7 @@ const App = () => {
       <Router>
         <Drawer />
         <Routes>
+          <Route path="/landing" element={<LandingPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/activities" element={<ActivitiesPage />} />
           <Route path="/categories/relationship-skills" element={<RelationshipSkillsPage />} />
