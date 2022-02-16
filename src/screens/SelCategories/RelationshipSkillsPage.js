@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid, Typography, Button } from '@mui/material';
 import PlaceIcon from '@mui/icons-material/Place';
 import Card from '../../components/card/Card'
 
@@ -59,7 +59,7 @@ const RelationshipSkillsPage = () => {
       {activitiesRS.map((activity) => {
         return (
           <Grid item key={activity} xs={12}>
-            <Button title={activity} />
+             <Button variant="contained">{activity} </Button>
           </Grid>
         )
       })}
