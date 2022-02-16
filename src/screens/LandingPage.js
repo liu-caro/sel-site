@@ -1,5 +1,4 @@
 import { Grid, Typography, Button, Card, CardContent } from '@mui/material';
-import { minHeight } from '@mui/system';
 
 const LandingPage = () => {
   return (
@@ -8,7 +7,7 @@ const LandingPage = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      px={2}>
+      px={3}>
       
       <Grid
       container
@@ -21,17 +20,17 @@ const LandingPage = () => {
         backgroundSize: 'cover',
         minHeight: '300px'}}>
 
-        <Grid item xs={12}> 
+        <Grid item xs={12} pb={2}> 
           <Typography variant="h2" align='center'>Social Emotional Learning (SEL)</Typography>
           <Typography variant="h6" align='center'>Guiding Your Child to Academic Success</Typography>
         </Grid>
 
         <Grid item xs={12} my={3}>
-          <Button variant="contained">Sign up / Log in</Button>
+          <Button variant="contained" color="warning">Sign up / Log in</Button>
         </Grid>
       </Grid>
 
-      <Grid item xs={12} mt={2}>
+      <Grid item xs={12} mt={3}>
         <Card style={{ backgroundColor: '#00A87D40' }}> 
           <CardContent>
             <Typography variant="h6">What is SEL?</Typography>
@@ -44,7 +43,7 @@ const LandingPage = () => {
         </Card>
       </Grid>
       
-      <Grid item xs={12} mt={2}>
+      <Grid item xs={12} mt={3}>
         <Card style={{ backgroundColor: '#FBBD3340' }}> 
           <CardContent>
             <Typography variant="h6">Why is SEL important for your child?</Typography>
@@ -57,7 +56,7 @@ const LandingPage = () => {
         </Card>
       </Grid>
 
-      <Grid item xs={12} mt={2}>
+      <Grid item xs={12} my={3}>
         <Card style={{ backgroundColor: '#FEE9E5' }}> 
           <CardContent>
             <Typography variant="h6">How can we help?</Typography>
