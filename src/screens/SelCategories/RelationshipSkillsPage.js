@@ -1,6 +1,5 @@
 import { Grid, Typography } from '@mui/material';
-import PlaceIcon from '@mui/icons-material/Place';
-import Card from '../../components/card/Card'
+import Button from '@mui/material/Button';
 
 const activitiesRS = [
   ['Count Me Down'],
