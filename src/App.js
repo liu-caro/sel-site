@@ -19,6 +19,7 @@ const App = () => {
         <MenuBar />
         <Routes>
           {/* home page */}
+          <Route path="/landing" element={<LandingPage />} />
           <Route path="/home" element={<HomePage />} />
 
           {/* main pages */}
