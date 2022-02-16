@@ -59,7 +59,7 @@ const RelationshipSkillsPage = () => {
       {activitiesRS.map((activity) => {
         return (
           <Grid item key={activity} xs={12}>
-            <Card title={activity} />
+            <Button title={activity} />
           </Grid>
         )
       })}
