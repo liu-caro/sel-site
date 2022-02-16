@@ -16,9 +16,9 @@ import { Link } from 'react-router-dom';
 const pages = [
   ['Home', '/home'],
   ['Activities', '/activities'],
-  ['Progress', '/home'],
-  ['Resources', '/home'],
-  ['Printables', '/home'],
+  ['Progress', '/progress'],
+  ['Resources', '/resources'],
+  ['Printables', '/printables'],
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
