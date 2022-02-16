@@ -1,4 +1,5 @@
 import { Grid, Typography, Button, Card, CardContent } from '@mui/material';
+import { minHeight } from '@mui/system';
 
 const LandingPage = () => {
   return (
@@ -7,24 +8,31 @@ const LandingPage = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      spacing={2}
-      p={8}>
+      px={2}>
+      
+      <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      pt={2}
+      style={{ 
+        backgroundImage: `url("https://www.nysut.org/~/media/images/nysut/news/2020/march/news_200326_parents_02.jpg?h=693&la=en&w=1200")`,
+        backgroundSize: 'cover',
+        minHeight: '300px'}}>
 
-      {/*
-        background photo behind text here
-        */}
+        <Grid item xs={12}> 
+          <Typography variant="h2" align='center'>Social Emotional Learning (SEL)</Typography>
+          <Typography variant="h6" align='center'>Guiding Your Child to Academic Success</Typography>
+        </Grid>
 
-      <Grid item xs={12}>
-        <Typography variant="h2" align='center'>Social Emotional Learning (SEL)</Typography>
-        <Typography variant="body1" align='center'>Guiding Your Child to Academic Success</Typography>
-      </Grid>
-
-      <Grid item xs={12} mb={4}>
-        <Button variant="contained">Sign up / Log in</Button>
+        <Grid item xs={12} my={3}>
+          <Button variant="contained">Sign up / Log in</Button>
+        </Grid>
       </Grid>
 
       <Grid item xs={12} mt={2}>
-        <Card>
+        <Card style={{ backgroundColor: '#00A87D40' }}> 
           <CardContent>
             <Typography variant="h6">What is SEL?</Typography>
             <Typography variant="paragraph">
@@ -35,9 +43,9 @@ const LandingPage = () => {
           </CardContent>
         </Card>
       </Grid>
-
+      
       <Grid item xs={12} mt={2}>
-        <Card>
+        <Card style={{ backgroundColor: '#FBBD3340' }}> 
           <CardContent>
             <Typography variant="h6">Why is SEL important for your child?</Typography>
             <Typography variant="paragraph">
@@ -50,7 +58,7 @@ const LandingPage = () => {
       </Grid>
 
       <Grid item xs={12} mt={2}>
-        <Card>
+        <Card style={{ backgroundColor: '#FEE9E5' }}> 
           <CardContent>
             <Typography variant="h6">How can we help?</Typography>
             <Typography variant="paragraph">
