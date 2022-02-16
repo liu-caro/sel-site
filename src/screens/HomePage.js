@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import PlaceIcon from '@mui/icons-material/Place';
-import Card from '../components/card/Card';
+import Card from '../components/Card';
 
 const cardInfo = [
   [

@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@mui/system";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Drawer from "./components/drawer/Drawer";
+import Drawer from "./components/Drawer";
 import HomePage from "./screens/HomePage";
 import ActivitiesPage from "./screens/ActivitiesPage";
 import ExamplePage from "./screens/ExamplePage";
