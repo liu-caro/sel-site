@@ -54,6 +54,11 @@ const App = () => {
 
           <Route path="/example" element={<ExamplePage />} />
           <Route path="*" element={<HomePage />} />
+
+          {/* Onboarding pages */}
+          <Route path="/onboarding-welcome" element={<OnboardingWelcomePage />} />
+          <Route path="/onboarding-activities" element={<OnboardingActivitiesPage />} />
+          <Route path="/onboarding-printables" element={<OnboardingPrintablesPage />} />
         </Routes>
       </Router>
     </ThemeProvider>
