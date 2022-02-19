@@ -1,35 +1,25 @@
-import { Grid, Typography } from '@mui/material';
-import Button from '@mui/material/Button';
-
-const activitiesRS = [
-  ['Count Me Down'],
-  ['Rose, Bud, Thorn'],
-  ['Make New Friends Bingo'],
-  ['Team Puzzle'],
-];
+import CategoryPage from '../../components/CategoryPage';
 
 const RelationshipSkillsPage = () => {
+  const rsActivities = [
+    ['Count Me Down'],
+    ['Rose, Bud, Thorn'],
+    ['Make New Friends Bingo'],
+    ['Team Puzzle']
+  ];
+  
   return (
-    <Grid
-      container
-      direction="column"
-      justifyContent="center"
-      alignItems="center"
-      spacing={2}
-      p={8}
-    >
-
-      <Grid item xs={12}>
-        <Typography variant="h1" align='center'>Relationship Skills</Typography>
-      </Grid>
-
-      <Grid item xs={12}>
-        <Typography paragraph>
+    <CategoryPage
+      title="Relationship Skills"
+      overviewText={
+        <div>
           Relationship Skills is the ability to understand the
           perspectives of others and empathize (including those from a differing
           backgrounds to one’s own).
-        </Typography>
-        <Typography paragraph>
+        </div>
+      }
+      importanceText={
+        <div>
           It is essential to:
           <ul>
             <li>Helping us build and maintain meaningful
@@ -37,8 +27,10 @@ const RelationshipSkillsPage = () => {
             <li>Supporting one another during collective grief and struggle</li>
             <li>Collaboratively finding solutions to new obstacles</li>
           </ul>
-        </Typography>
-        <Typography paragraph>
+        </div>
+      }
+      keySkillsText={
+        <div>
           It includes the capacties to:
           <ul>
             <li>Communicate clearly</li>
@@ -49,20 +41,10 @@ const RelationshipSkillsPage = () => {
             <li>Provide leadership</li>
             <li>Seek or offer help when needed</li>
           </ul>
-        </Typography>
-      </Grid>
-
-      <Grid item xs={12}>
-        <Typography variant="h3" align='center'>Activities</Typography>
-      </Grid>
-      {activitiesRS.map((activity) => {
-        return (
-          <Grid item key={activity} xs={12}>
-            <Button title={activity} />
-          </Grid>
-        )
-      })}
-    </Grid>
+        </div>
+      }
+      activities = {rsActivities}
+    />
   );
 };
 
