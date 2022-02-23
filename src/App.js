@@ -10,6 +10,7 @@ import RelationshipSkillsPage from './screens/SelCategories/RelationshipSkillsPa
 import RSCountMeDownActivity from './screens/RelationshipSkillsActivities/RSCountMeDownActivity';
 import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
+import CreateAccountPage from './screens/CreateAccountPage';
 import { theme } from './utils/theme';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           {/* home page */}
           <Route path="/home" element={<HomePage />} />
+          <Route path="/create-account" element={<CreateAccountPage />} />
 
           {/* main pages */}
           <Route path="/activities" element={<ActivitiesPage />} />
