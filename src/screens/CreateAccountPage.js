@@ -1,5 +1,6 @@
 import { Grid, Typography, Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
+import { Link } from 'react-router-dom';
 
 const CreateAccountPage = () => {
     return (
@@ -42,7 +43,9 @@ const CreateAccountPage = () => {
                 </Grid>
 
                 <Grid item align={"center"} xs={12}>
-                    <Typography variant="subtitle1">Returning User? Log in here</Typography>
+                    <Link to="/">
+                        <Typography variant="subtitle1">Returning User? Log in here</Typography>
+                    </Link>
                 </Grid>
                 <Grid item align={"center"} xs={12}>
                     <Button variant="contained">Sign Up!</Button>
