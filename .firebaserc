@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "sel-site"
-  }
+    "default": "sel-zoo"
+  },
+  "targets": {}
 }
