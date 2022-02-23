@@ -40,7 +40,9 @@ const OnboardingPrintablesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <Button variant="contained">Get started!</Button>
+        <Link to="../HomePage.js">
+          <Button variant="contained">Get started!</Button>
+        </Link>
       </Grid>
 
     </Grid>

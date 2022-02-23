@@ -27,11 +27,15 @@ const OnboardingActivitiesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <Button variant="text">Skip tutorial</Button>
+      <Link to="../HomePage.js">
+          <Button variant="text">Skip tutorial</Button>
+        </Link>
       </Grid>
 
       <Grid item xs={12}>
-        <Button variant="contained">Next</Button>
+      <Link to="/OnboardingPrintablesPage.js">
+          <Button variant="contained">Next</Button>
+        </Link>
       </Grid>
 
     </Grid>
