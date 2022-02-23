@@ -35,7 +35,7 @@ const App = () => {
           />
 
           {/* SEL activities pages */}
-          {/* activites: relationship skills */}
+          {/* activities: relationship skills */}
           <Route path="/rs/count-me-down" element={<RSCountMeDownActivity />} />
 
           <Route path="/example" element={<ExamplePage />} />
