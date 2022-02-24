@@ -1,5 +1,7 @@
 import { Grid, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+
 
 const CategoryPage = ({ activities, title, overviewText, importanceText, keySkillsText }) => {
 
@@ -34,10 +36,12 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
 
             </Grid>
 
-            {activities.map((activity) => {
+            {activities.map(([activityName, activityLink]) => {
                 return (
-                    <Grid item key={activity} xs={12}>
-                        <Button variant="contained">{activity}</Button>
+                    <Grid item key={activityName} xs={12}>
+                        <Link to={activityLink} style={{ textDecoration: 'none' }}>
+                            <Button variant="contained">{activityName}</Button>
+                        </Link>
                     </Grid>
                 )
             })}

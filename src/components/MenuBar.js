@@ -90,7 +90,7 @@ const ResponsiveAppBar = () => {
                   component={Link}
                   to={pageLink}
                 >
-                  <Link to={pageLink}>
+                  <Link to={pageLink} style={{ textDecoration: 'none' }}>
                     <Typography textAlign="center">{pageName}</Typography>
                   </Link>
                 </MenuItem>

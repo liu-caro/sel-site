@@ -23,7 +23,6 @@ const App = () => {
         <MenuBar />
         <Routes>
           {/* home page */}
-          <Route path="/landing" element={<LandingPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/signup" element={<SignupPage />} />
 
@@ -45,7 +44,7 @@ const App = () => {
 
           <Route path="/example" element={<ExamplePage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<LandingPage />} />
 
           {/* Onboarding pages */}
           <Route path="/onboarding-welcome" element={<OnboardingWelcomePage />} />

@@ -43,12 +43,17 @@ const SignupPage = () => {
                 </Grid>
 
                 <Grid item align={"center"} xs={12}>
-                    <Link to="/">
-                        <Typography variant="subtitle1">Returning User? Log in here</Typography>
-                    </Link>
+                        <Typography variant="subtitle1">
+                            <span> Returning User? </span>
+                            <Link to="/">
+                                Log in here
+                            </Link>
+                        </Typography>
                 </Grid>
                 <Grid item align={"center"} xs={12}>
-                    <Button variant="contained">Sign Up!</Button>
+                    <Link to='/onboarding-welcome' style={{ textDecoration: 'none' }}>
+                        <Button variant="contained">Sign Up!</Button>
+                    </Link>
                 </Grid>
             </Grid>
 

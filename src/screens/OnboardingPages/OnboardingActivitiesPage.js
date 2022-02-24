@@ -29,12 +29,12 @@ const OnboardingActivitiesPage = () => {
 
       <Grid item xs={12}>
       <Link to="/home">
-          <Button variant="text">Skip tutorial</Button>
+          <Typography variant="button">Skip tutorial</Typography>
         </Link>
       </Grid>
 
       <Grid item xs={12}>
-      <Link to="/onboarding-printables">
+      <Link to="/onboarding-printables" style={{ textDecoration: 'none' }}>
           <Button variant="contained">Next</Button>
         </Link>
       </Grid>
