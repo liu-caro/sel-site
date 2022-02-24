@@ -1,10 +1,11 @@
-import { Grid, Typography, ImageList, ImageListItem, LinearProgress } from "@mui/material";
+import { Grid, Typography, ImageList, ImageListItem } from "@mui/material";
 import Button from "@mui/material/Button";
 import turtleProgressBar from './../../assets/onboardingImages/turtleBar.svg';
 import dolphinProgressBar from './../../assets/onboardingImages/dolphinBar.svg';
 import giraffeProgressBar from './../../assets/onboardingImages/giraffeBar.svg';
 import tigerProgressBar from './../../assets/onboardingImages/tigerBar.svg';
 import hippoProgressBar from './../../assets/onboardingImages/hippoBar.svg';
+import { Link } from 'react-router-dom';
 
 const OnboardingWelcomePage = () => {
   return (
@@ -49,13 +50,13 @@ const OnboardingWelcomePage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <Link to="../HomePage.js">
+        <Link to="/home">
           <Button variant="text">Skip tutorial</Button>
         </Link>
       </Grid>
 
       <Grid item xs={12}>
-        <Link to="/OnboardingActivitiesPage.js">
+        <Link to="/onboarding-activities">
           <Button variant="contained">Next</Button>
         </Link>
       </Grid>

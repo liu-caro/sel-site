@@ -41,6 +41,7 @@ const App = () => {
           <Route path="/rs/count-me-down" element={<RSCountMeDownActivity />} />
 
           <Route path="/example" element={<ExamplePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
 
           {/* Onboarding pages */}

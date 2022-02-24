@@ -2,6 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import progressTracker from './../../assets/onboardingImages/progressTracker.svg';
 import flashcards from './../../assets/onboardingImages/flashcards.svg';
+import { Link } from 'react-router-dom';
 
 const OnboardingPrintablesPage = () => {
   return (
@@ -18,7 +19,7 @@ const OnboardingPrintablesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <img src={progressTracker} alt="progress tracker image" height={650} />
+        <img src={progressTracker} alt="progress tracker" height={650} />
       </Grid>
 
       <Grid item xs={12}>
@@ -26,7 +27,7 @@ const OnboardingPrintablesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <img src={flashcards} alt="flashcards image" height={650} />
+        <img src={flashcards} alt="flashcards" height={650} />
       </Grid>
 
       <Grid item xs={12}>
@@ -40,7 +41,7 @@ const OnboardingPrintablesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-        <Link to="../HomePage.js">
+        <Link to="/home">
           <Button variant="contained">Get started!</Button>
         </Link>
       </Grid>

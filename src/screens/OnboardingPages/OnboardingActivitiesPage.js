@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import activitiesPage from './../../assets/onboardingImages/activitiesPage.svg';
+import { Link } from 'react-router-dom';
 
 const OnboardingActivitiesPage = () => {
   return (
@@ -27,13 +28,13 @@ const OnboardingActivitiesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-      <Link to="../HomePage.js">
+      <Link to="/home">
           <Button variant="text">Skip tutorial</Button>
         </Link>
       </Grid>
 
       <Grid item xs={12}>
-      <Link to="/OnboardingPrintablesPage.js">
+      <Link to="/onboarding-printables.js">
           <Button variant="contained">Next</Button>
         </Link>
       </Grid>
