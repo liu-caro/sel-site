@@ -8,6 +8,9 @@ import ResourcesPage from './screens/ResourcesPage';
 import PrintablesPage from './screens/PrintablesPage';
 import RelationshipSkillsPage from './screens/SelCategories/RelationshipSkillsPage';
 import RSCountMeDownActivity from './screens/RelationshipSkillsActivities/RSCountMeDownActivity';
+import OnboardingWelcomePage from "./screens/OnboardingPages/OnboardingWelcomePage";
+import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivitiesPage";
+import OnboardingPrintablesPage from "./screens/OnboardingPages/OnboardingPrintablesPage";
 import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
 import CreateAccountPage from './screens/CreateAccountPage';
@@ -41,7 +44,13 @@ const App = () => {
           <Route path="/rs/count-me-down" element={<RSCountMeDownActivity />} />
 
           <Route path="/example" element={<ExamplePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
+
+          {/* Onboarding pages */}
+          <Route path="/onboarding-welcome" element={<OnboardingWelcomePage />} />
+          <Route path="/onboarding-activities" element={<OnboardingActivitiesPage />} />
+          <Route path="/onboarding-printables" element={<OnboardingPrintablesPage />} />
         </Routes>
       </Router>
     </ThemeProvider>
