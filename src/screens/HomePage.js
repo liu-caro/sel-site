@@ -25,6 +25,7 @@ const HomePage = () => {
       <Grid item xs={12}>
         <Typography variant="h4">SEL Portal Homepage </Typography>
       </Grid>
+      <br />
       {cardInfo.map((row) => {
         return (
           <Grid container xs={6} spacing={2} style={{ marginBottom: '0.5rem' }}>

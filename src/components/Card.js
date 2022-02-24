@@ -1,24 +1,21 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MuiCard from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-const Card = ({ title, icon, internalLink = null }) => {
-  let navigate = useNavigate();
+const Card = ({ title, icon=null, internalLink = '/' }) => {
   return (
     <div>
-        <MuiCard 
-          style={{ backgroundColor: 'cyan', textAlign: 'center' }}
-          onClick={internalLink ? () => {
-            navigate(internalLink);
-          } : null}
-        >
-          <CardContent>
-            <Typography variant="h6">{title}</Typography>
-          </CardContent>
-          <CardMedia>{icon}</CardMedia>
-        </MuiCard>
+        <Link to={internalLink} style={{ textDecoration: 'none' }}>
+          <MuiCard style={{ textAlign: 'center', backgroundColor: '#FBBD3340' }}>
+            <CardContent>
+              <Typography variant="h4">{title}</Typography>
+              <br />
+              {icon ? <CardMedia>{icon}</CardMedia> : null}
+            </CardContent>
+          </MuiCard>
+        </Link>
     </div>
   );
 };
