@@ -2,7 +2,7 @@ import { Grid, Typography, Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
 
-const CreateAccountPage = () => {
+const SignupPage = () => {
     return (
         <Grid
             container
@@ -58,4 +58,4 @@ const CreateAccountPage = () => {
     );
 };
 
-export default CreateAccountPage;
+export default SignupPage;
