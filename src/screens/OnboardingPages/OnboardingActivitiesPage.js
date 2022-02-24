@@ -34,7 +34,7 @@ const OnboardingActivitiesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-      <Link to="/onboarding-printables.js">
+      <Link to="/onboarding-printables">
           <Button variant="contained">Next</Button>
         </Link>
       </Grid>
