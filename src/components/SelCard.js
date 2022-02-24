@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import LinearProgressWithLabel from '@mui/material/LinearProgress'
 
-const SelCard = ({ title, description, progress, color, internalLink='/' }) => {
+const SelCard = ({ title, description, progress, color, internalLink='/activities' }) => {
     return (
         <div>
             <Link to={internalLink} style={{ textDecoration: 'none' }}>

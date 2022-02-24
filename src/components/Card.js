@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-const Card = ({ title, icon=null, internalLink = '/' }) => {
+const Card = ({ title, icon=null, internalLink = '/home' }) => {
   return (
     <div>
         <Link to={internalLink} style={{ textDecoration: 'none' }}>
