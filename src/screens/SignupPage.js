@@ -2,7 +2,7 @@ import { Grid, Typography, Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
 
-const CreateAccountPage = () => {
+const SignupPage = () => {
     return (
         <Grid
             container
@@ -43,12 +43,17 @@ const CreateAccountPage = () => {
                 </Grid>
 
                 <Grid item align={"center"} xs={12}>
-                    <Link to="/">
-                        <Typography variant="subtitle1">Returning User? Log in here</Typography>
-                    </Link>
+                        <Typography variant="subtitle1">
+                            <span> Returning User? </span>
+                            <Link to="/">
+                                Log in here
+                            </Link>
+                        </Typography>
                 </Grid>
                 <Grid item align={"center"} xs={12}>
-                    <Button variant="contained">Sign Up!</Button>
+                    <Link to='/onboarding-welcome' style={{ textDecoration: 'none' }}>
+                        <Button variant="contained">Sign Up!</Button>
+                    </Link>
                 </Grid>
             </Grid>
 
@@ -58,4 +63,4 @@ const CreateAccountPage = () => {
     );
 };
 
-export default CreateAccountPage;
+export default SignupPage;

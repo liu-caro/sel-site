@@ -1,12 +1,11 @@
-import { Grid, Typography, Button } from '@mui/material';
 import CategoryPage from '../../components/CategoryPage';
 
 const RelationshipSkillsPage = () => {
   const rsActivities = [
-    ['Count Me Down'],
-    ['Rose, Bud, Thorn'],
-    ['Make New Friends Bingo'],
-    ['Team Puzzle']
+    ['Count Me Down', '/rs/count-me-down',],
+    ['Rose, Bud, Thorn', '/'],
+    ['Make New Friends Bingo', '/'],
+    ['Team Puzzle', '/']
   ];
   
   return (

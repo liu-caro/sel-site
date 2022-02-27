@@ -13,7 +13,7 @@ import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivi
 import OnboardingPrintablesPage from "./screens/OnboardingPages/OnboardingPrintablesPage";
 import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
-import CreateAccountPage from './screens/CreateAccountPage';
+import SignupPage from './screens/SignupPage';
 import { theme } from './utils/theme';
 
 const App = () => {
@@ -21,11 +21,11 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <MenuBar />
+        <br />
         <Routes>
           {/* home page */}
-          <Route path="/landing" element={<LandingPage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/create-account" element={<CreateAccountPage />} />
+          <Route path="/signup" element={<SignupPage />} />
 
           {/* main pages */}
           <Route path="/activities" element={<ActivitiesPage />} />
@@ -45,7 +45,7 @@ const App = () => {
 
           <Route path="/example" element={<ExamplePage />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<LandingPage />} />
 
           {/* Onboarding pages */}
           <Route path="/onboarding-welcome" element={<OnboardingWelcomePage />} />

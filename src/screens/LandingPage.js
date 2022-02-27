@@ -1,4 +1,5 @@
 import { Grid, Typography, Button, Card, CardContent } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -26,7 +27,9 @@ const LandingPage = () => {
         </Grid>
 
         <Grid item xs={12} my={3}>
-          <Button variant="contained" color="warning">Sign up / Log in</Button>
+          <Link to="/signup" style={{ textDecoration: 'none' }}>
+            <Button variant="contained" color="warning">Sign up / Log in</Button>
+          </Link>
         </Grid>
       </Grid>
 
