@@ -32,7 +32,7 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
             </Grid>
 
             <Grid item xs={12}>
-                <Typography variant="h3" align='center'>Activities</Typography>
+                <Typography variant="h2" align='center'>Activities</Typography>
 
             </Grid>
 

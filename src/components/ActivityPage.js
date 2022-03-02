@@ -13,7 +13,7 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl}) => {
       p={8}
     >
         <Grid item xs={12}>
-          <Typography variant="h2">{title}</Typography>
+          <Typography variant="h1">{title}</Typography>
         </Grid>
         
         <Grid item xs={12}>
@@ -25,7 +25,7 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl}) => {
         </Grid>
       
         <Grid item xs={12}>
-          <Typography variant="h3">Directions</Typography>
+          <Typography variant="h2">Directions</Typography>
         </Grid>
         
         <Grid item xs={12}>
@@ -33,7 +33,7 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl}) => {
         </Grid>
         
         <Grid item xs={12}>
-          <Typography variant="h3">Instructional Video</Typography>
+          <Typography variant="h2">Instructional Video</Typography>
         </Grid>
 
         <Grid item xs={12}>
