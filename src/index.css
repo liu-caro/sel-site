@@ -1,3 +1,6 @@
+@import url(https://fonts.adobe.com/fonts/proxima-nova);
+@import url(https://fonts.adobe.com/fonts/sofia);
+
 * {
     /* Color variables */
     --textColor: #16161D;
@@ -17,11 +20,8 @@
     --darkGiraffeYellow: #B98000;
     --darkTigerRed: #992600;
     --darkHippoPurple: #19004E;
-  
-    /* Typography variables */
-    --proximaNova: "Proxima Nova";
-    --sofiaProSoft: "Sofia Pro Soft";
-    --sofiaProRegular: "Sofia Pro Regular";  
+    
+    color: var(--textColor);
 }
 
 body {
@@ -32,6 +32,36 @@ body {
   background-color: var(--backgroundColor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.MuiTypography-h1 {
+  font-family: 'Sofia Pro Soft Medium', 'Helvetica', 'Arial', sans-serif;
+  font-size: 45pt;
+}
+
+.MuiTypography-h2 {
+  font-family: 'Sofia Pro Soft Meduim', 'Helvetica', 'Arial', sans-serif;
+  font-size: 28pt;
+}
+
+.MuiTypography-h3 {
+  font-family: 'Sofia Pro Soft Regular', 'Helvetica', 'Arial', sans-serif;
+  font-size: 24pt;
+}
+
+.MuiTypography-h4 {
+  font-family: 'Sofia Pro Soft Regular', 'Helvetica', 'Arial', sans-serif;
+  font-size: 20pt;
+}
+
+.MuiTypography-body1, .MuiTypography-paragraph {
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14pt;
+}
+
+.MuiTypography-caption {
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+  font-size: 11pt;
 }
 
 code {
