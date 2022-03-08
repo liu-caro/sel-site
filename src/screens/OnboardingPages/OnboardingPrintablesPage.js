@@ -42,7 +42,7 @@ const OnboardingPrintablesPage = () => {
 
       <Grid item xs={12}>
         <Link to="/home" style={{ textDecoration: 'none' }}>
-          <Button variant="contained">Get started!</Button>
+          <Button variant="contained" class="landingOnboardingButton">Get started!</Button>
         </Link>
       </Grid>
 

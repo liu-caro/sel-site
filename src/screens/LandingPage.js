@@ -28,7 +28,7 @@ const LandingPage = () => {
 
         <Grid item xs={12} my={3}>
           <Link to="/signup" style={{ textDecoration: 'none' }}>
-            <Button variant="contained" color="warning">Sign up / Log in</Button>
+            <Button variant="contained" class="landingOnboardingButton">Sign up / Log in</Button>
           </Link>
         </Grid>
       </Grid>

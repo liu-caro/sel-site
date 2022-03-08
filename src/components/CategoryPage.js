@@ -36,11 +36,11 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
 
             </Grid>
 
-            {activities.map(([activityName, activityLink]) => {
+            {activities.map(([activityName, activityLink, buttonCategory]) => {
                 return (
                     <Grid item key={activityName} xs={12}>
                         <Link to={activityLink} style={{ textDecoration: 'none' }}>
-                            <Button variant="contained">{activityName}</Button>
+                            <Button variant="contained" class={buttonCategory}>{activityName}</Button>
                         </Link>
                     </Grid>
                 )

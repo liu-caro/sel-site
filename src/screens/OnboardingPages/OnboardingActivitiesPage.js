@@ -35,7 +35,7 @@ const OnboardingActivitiesPage = () => {
 
       <Grid item xs={12}>
       <Link to="/onboarding-printables" style={{ textDecoration: 'none' }}>
-          <Button variant="contained">Next</Button>
+          <Button variant="contained" class="landingOnboardingButton">Next</Button>
         </Link>
       </Grid>
 
