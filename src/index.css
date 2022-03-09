@@ -1,8 +1,34 @@
+/* https://mui.com/api/typography/#css */
+
+* {
+    /* Color variables */
+    --textColor: #16161D;
+    --backgroundColor: #FEFEFA;
+    --turtleGreen: #00BD79;
+    --dolphinBlue: #00DED1;
+    --giraffeYellow: #FFCC5A;
+    --tigerRed: #FCB7A8;
+    --hippoPurple: #592DB5;
+    --lightTurtleGreen: #bfe9db;
+    --lightDolphinBlue: #dff2f7;
+    --lightGiraffeYellow: #fdeec8;
+    --lightTigerRed: #fee9e5;
+    --lightHippoPurple: #d5cae9;
+    --darkTurtleGreen: #006249;
+    --darkDolphinBlue: #017B6D;
+    --darkGiraffeYellow: #B98000;
+    --darkTigerRed: #992600;
+    --darkHippoPurple: #19004E;
+    
+    color: var(--textColor);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: var(--backgroundColor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

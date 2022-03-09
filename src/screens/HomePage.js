@@ -23,7 +23,7 @@ const HomePage = () => {
             spacing={2}
         >
             <Grid item xs={12}>
-                <Typography variant='h4'>SEL Portal Homepage </Typography>
+                <Typography variant='h1'>SEL Portal Homepage </Typography>
             </Grid>
             <br />
             {cardInfo.map((row) => {

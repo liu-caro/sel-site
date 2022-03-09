@@ -12,7 +12,7 @@ const ActivitiesPage = () => {
       p={8}
     >
       <Grid item xs={12}>
-        <Typography variant="h2" align='center'>SEL Activities by Skill Category</Typography>
+        <Typography variant="h1" align='center'>SEL Activities by Skill Category</Typography>
       </Grid>
 
       <Grid item m={1}>
