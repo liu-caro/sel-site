@@ -2,10 +2,10 @@ import CategoryPage from '../../components/CategoryPage';
 
 const RelationshipSkillsPage = () => {
   const rsActivities = [
-    ['Count Me Down', '/rs/count-me-down',],
-    ['Rose, Bud, Thorn', '/'],
-    ['Make New Friends Bingo', '/'],
-    ['Team Puzzle', '/']
+    ['Count Me Down', '/rs/count-me-down', 'relationshipSkillsCategory categoryPageButton'],
+    ['Rose, Bud, Thorn', '/', 'relationshipSkillsCategory categoryPageButton'],
+    ['Make New Friends Bingo', '/', 'relationshipSkillsCategory categoryPageButton'],
+    ['Team Puzzle', '/', 'relationshipSkillsCategory categoryPageButton']
   ];
   
   return (

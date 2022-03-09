@@ -15,6 +15,24 @@ let h4Size = 22;
 let h5Size = 20;
 let h6Size = 18;
 let paragraphSize = 14;
+let buttonSize = 13;
+
+// Colors
+let turtleGreen = '#00BD79';
+let dolphinBlue = '#00DED1';
+let giraffeYellow = '#FFCC5A';
+let tigerRed = '#FCB7A8';
+let hippoPurple = '#592DB5';
+let lightTurtleGreen = '#bfe9db';
+let lightDolphinBlue = '#dff2f7';
+let lightGiraffeYellow = '#fdeec8';
+let lightTigerRed = '#fee9e5';
+let lightHippoPurple = '#d5cae9';
+let darkTurtleGreen = '#006249';
+let darkDolphinBlue = '#017B6D';
+let darkGiraffeYellow = '#B98000';
+let darkTigerRed = '#992600';
+let darkHippoPurple = '#19004E';
 
 let theme = createTheme({
     typography: {
@@ -49,9 +67,30 @@ let theme = createTheme({
         body1: {
             fontFamily: proximaNova, defaultType,
             fontSize: paragraphSize
+        },
+        button: {
+            fontFamily: sofiaProSoftRegular, defaultType,
+            fontSize: buttonSize
         }
     }
 });
 theme = responsiveFontSizes(theme);
 
-export { theme };
+export { 
+    theme,
+    turtleGreen,
+    dolphinBlue,
+    giraffeYellow,
+    tigerRed,
+    hippoPurple,
+    lightTurtleGreen,
+    lightDolphinBlue,
+    lightGiraffeYellow,
+    lightTigerRed,
+    lightHippoPurple,
+    darkTurtleGreen,
+    darkDolphinBlue,
+    darkGiraffeYellow,
+    darkTigerRed,
+    darkHippoPurple
+};
