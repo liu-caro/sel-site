@@ -15,7 +15,7 @@ const ActivitiesPage = () => {
         <Typography variant="h1" align='center'>SEL Activities by Skill Category</Typography>
       </Grid>
 
-      <Grid item m={1}>
+      <Grid item xs={12} md={6} m={2}>
         <SelCard
           title={'Responsible Decision Making'}
           description={'Understanding how our decisions can impact others and ourselves'} 
@@ -24,7 +24,7 @@ const ActivitiesPage = () => {
           internalLink={'/activities'} />
       </Grid>
 
-      <Grid item m={1}>
+      <Grid item xs={12} md={6} m={2}>
         <SelCard
           title={'Self Awareness'}
           description={'Understanding one’s own emotions, thoughts, and values and how they influence behavior across contexts'} 
@@ -33,7 +33,7 @@ const ActivitiesPage = () => {
           internalLink={'/activities'} />
       </Grid>
 
-      <Grid item m={1}>
+      <Grid item xs={12} md={6} m={2}>
         <SelCard
           title={'Social Awareness'}
           description={'Understanding the perspectives of others and empathize (including those from a differing backgrounds to one’s own)'} 
@@ -42,7 +42,7 @@ const ActivitiesPage = () => {
           internalLink={'/activities'} />
       </Grid>
 
-      <Grid item m={1}>
+      <Grid item xs={12} md={6} m={2}>
         <SelCard
           title={'Relationship Skills'}
           description={'Establishing and maintaining healthy and supportive relationships to navigate settings with diverse individuals and groups'} 
@@ -51,7 +51,7 @@ const ActivitiesPage = () => {
           internalLink={'/categories/relationship-skills'} />
       </Grid>
 
-      <Grid item m={1}>
+      <Grid item xs={12} md={6} m={2}>
         <SelCard
           title={'Self Management'}
           description={'Managing one’s emotions, thoughts, and behaviors effectively in different situations and to achieve goals and aspirations.'} 
