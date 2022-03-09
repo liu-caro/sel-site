@@ -10,7 +10,7 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCat
       justifyContent="center"
       alignItems="center"
       spacing={2}
-      p={8}
+      p={4}
     >
         <Grid item xs={12}>
           <Typography variant="h1">{title}</Typography>
@@ -36,8 +36,8 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCat
           <Typography variant="h2">Instructional Video</Typography>
         </Grid>
 
-        <Grid item xs={12}>
-          <ReactPlayer url={videoUrl} />
+        <Grid item xs={6}>
+          <ReactPlayer url={videoUrl} style={{ maxWidth: '300px'}}/>
         </Grid>
 
         <Grid item xs={12}>

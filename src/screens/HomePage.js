@@ -22,6 +22,7 @@ const HomePage = () => {
             alignItems='center'
             spacing={2}
         >
+            <br/>
             <Grid item xs={12}>
                 <Typography variant='h1'>SEL Portal Homepage </Typography>
             </Grid>
@@ -30,7 +31,7 @@ const HomePage = () => {
                 return (
                     <Grid
                         container
-                        xs={6}
+                        xs={8}
                         spacing={2}
                         style={{ marginBottom: '0.5rem' }}
                     >

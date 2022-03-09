@@ -12,14 +12,14 @@ const OnboardingActivitiesPage = () => {
       justifyContent="center"
       alignItems="center"
       spacing={2}
-      p={8}
+      p={3}
     >
-      <Grid item xs={12}>
+      <Grid item xs={12} style={{textAlign:'center'}}>
         <Typography variant="h1">Practice skills with activities</Typography>
       </Grid>
 
-      <Grid item xs={12}>
-        <img src={activitiesPage} alt="activities page" height={650} />
+      <Grid item xs={12} ml={4}>
+        <img src={activitiesPage} alt="activities page" width={225} />
       </Grid>
 
       <Grid item xs={12}>

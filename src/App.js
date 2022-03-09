@@ -21,7 +21,6 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <MenuBar />
-        <br />
         <Routes>
           {/* home page */}
           <Route path="/home" element={<HomePage />} />
