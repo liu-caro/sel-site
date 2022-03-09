@@ -6,6 +6,7 @@ import giraffeProgressBar from './../../assets/onboardingImages/giraffeBar.svg';
 import tigerProgressBar from './../../assets/onboardingImages/tigerBar.svg';
 import hippoProgressBar from './../../assets/onboardingImages/hippoBar.svg';
 import { Link } from 'react-router-dom';
+import { StyledLink } from "../../utils/styledLink";
 
 const OnboardingWelcomePage = () => {
   return (
@@ -51,7 +52,7 @@ const OnboardingWelcomePage = () => {
 
       <Grid item xs={12}>
       <Link to="/home">
-          <Typography variant="button">Skip tutorial</Typography>
+          <StyledLink variant="text">Skip tutorial</StyledLink>
         </Link>
       </Grid>
 
