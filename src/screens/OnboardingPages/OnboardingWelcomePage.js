@@ -1,7 +1,8 @@
-import { Grid, Typography, ImageList, ImageListItem } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import animalProgressOverview from './../../assets/onboardingImages/animalProgressOverview.svg';
 import { Link } from 'react-router-dom';
+import { StyledLink } from "../../utils/styledLink";
 
 const OnboardingWelcomePage = () => {
   return (
@@ -28,13 +29,13 @@ const OnboardingWelcomePage = () => {
 
       <Grid item xs={12}>
       <Link to="/home">
-          <Typography variant="button">Skip tutorial</Typography>
+          <StyledLink variant="text">Skip tutorial</StyledLink>
         </Link>
       </Grid>
 
       <Grid item xs={12}>
         <Link to="/onboarding-activities" style={{ textDecoration: 'none' }}>
-          <Button variant="contained">Next</Button>
+          <Button variant="contained" class="landingOnboardingButton">Next</Button>
         </Link>
       </Grid>
 

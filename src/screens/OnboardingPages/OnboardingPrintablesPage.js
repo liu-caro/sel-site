@@ -12,7 +12,6 @@ const OnboardingPrintablesPage = () => {
             justifyContent='center'
             alignItems='center'
             p={3}
-
         >
             <Grid item xs={12} style={{ textAlign: 'center' }}>
                 <Typography variant='h1'>Enhance with printables</Typography>
@@ -20,7 +19,11 @@ const OnboardingPrintablesPage = () => {
 
             <br />
 
-            <Grid container direction='row' style={{ alignItems: 'center', justifyContent:'center' }}>
+            <Grid
+                container
+                direction='row'
+                style={{ alignItems: 'center', justifyContent: 'center' }}
+            >
                 <Grid item xs={6} mr={5}>
                     <img src={progressTracker} alt='progress tracker' />
                 </Grid>
@@ -31,9 +34,13 @@ const OnboardingPrintablesPage = () => {
             </Grid>
 
             <br />
-            <Grid container direction='row' style={{ alignItems: 'center', justifyContent:'center' }}>
+            <Grid
+                container
+                direction='row'
+                style={{ alignItems: 'center', justifyContent: 'center' }}
+            >
                 <Grid item xs={5} mr={1}>
-                    <Typography variant='h4' style={{ textAlign: 'center'}}>
+                    <Typography variant='h4' style={{ textAlign: 'center' }}>
                         On-the-Go Activity Flipbook
                     </Typography>
                 </Grid>
@@ -43,7 +50,7 @@ const OnboardingPrintablesPage = () => {
                 </Grid>
             </Grid>
 
-            <br /> 
+            <br />
             <Grid item xs={12}>
                 <Typography variant='body1'>
                     We provide lots of low-cost printable resources that go
@@ -54,11 +61,13 @@ const OnboardingPrintablesPage = () => {
                     together!
                 </Typography>
             </Grid>
-            <br /> 
+            <br />
 
             <Grid item xs={12}>
                 <Link to='/home' style={{ textDecoration: 'none' }}>
-                    <Button variant='contained'>Get started!</Button>
+                    <Button variant='contained' class='landingOnboardingButton'>
+                        Get started!
+                    </Button>
                 </Link>
             </Grid>
         </Grid>

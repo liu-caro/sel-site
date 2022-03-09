@@ -5,46 +5,49 @@ const LandingPage = () => {
     return (
         <div>
             <Grid
-                    container
-                    direction='column'
-                    justifyContent='center'
-                    alignItems='center'
-                    pt={2}
-                    mb={5}
-                    style={{
-                        background: `linear-gradient(#1A1A1A37, #1A1A1A37), url("https://rochester.kidsoutandabout.com/sites/default/files/styles/970w/public/Parent%20Child%20Read%201.jpg?itok=E7Xt6FqZ")`,
-                        minHeight: '300px',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center',
-                        backgroundColor: 'white',
-                    }}
-                >
-                    <Grid item xs={12} pb={2}>
-                        <Typography
-                            variant='h2'
-                            align='center'
-                            style={{ color: 'white' }}
-                        >
-                            Social Emotional Learning (SEL)
-                        </Typography>
-                        <Typography
-                            variant='h6'
-                            align='center'
-                            style={{ color: 'white' }}
-                        >
-                            Guiding Your Child to Academic Success
-                        </Typography>
-                    </Grid>
-
-                    <Grid item xs={12} my={3}>
-                        <Link to='/signup' style={{ textDecoration: 'none' }}>
-                            <Button variant='contained' color='warning'>
-                                Sign up / Log in
-                            </Button>
-                        </Link>
-                    </Grid>
+                container
+                direction='column'
+                justifyContent='center'
+                alignItems='center'
+                pt={2}
+                mb={5}
+                style={{
+                    background: `linear-gradient(#1A1A1A37, #1A1A1A37), url("https://rochester.kidsoutandabout.com/sites/default/files/styles/970w/public/Parent%20Child%20Read%201.jpg?itok=E7Xt6FqZ")`,
+                    minHeight: '300px',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundColor: 'white',
+                }}
+            >
+                <Grid item xs={12} pb={2}>
+                    <Typography
+                        variant='h2'
+                        align='center'
+                        style={{ color: 'white' }}
+                    >
+                        Social Emotional Learning (SEL)
+                    </Typography>
+                    <Typography
+                        variant='h6'
+                        align='center'
+                        style={{ color: 'white' }}
+                    >
+                        Guiding Your Child to Academic Success
+                    </Typography>
                 </Grid>
-            
+
+                <Grid item xs={12} my={3}>
+                    <Link to='/signup' style={{ textDecoration: 'none' }}>
+                        <Button
+                            variant='contained'
+                            class='landingOnboardingButton'
+                        >
+                            Sign up / Log in
+                        </Button>
+                    </Link>
+                </Grid>
+            </Grid>
+
             <Grid
                 container
                 direction='column'
@@ -52,9 +55,17 @@ const LandingPage = () => {
                 alignItems='center'
                 px={3}
             >
-
                 <Grid container alignItems='center' justifyContent={'center'}>
-                <Grid item xs={12} md={3} ml={2} mr={2} mt={2} mb={2}style={{ maxWidth: '350px' }}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={3}
+                        ml={2}
+                        mr={2}
+                        mt={2}
+                        mb={2}
+                        style={{ maxWidth: '350px' }}
+                    >
                         <Card
                             style={{
                                 backgroundColor: '#00A87D40',
@@ -78,7 +89,16 @@ const LandingPage = () => {
                         </Card>
                     </Grid>
 
-                    <Grid item xs={12} md={3} ml={2} mr={2} mt={2} mb={2}style={{ maxWidth: '350px' }}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={3}
+                        ml={2}
+                        mr={2}
+                        mt={2}
+                        mb={2}
+                        style={{ maxWidth: '350px' }}
+                    >
                         <Card
                             style={{
                                 backgroundColor: '#FBBD3340',
@@ -101,7 +121,16 @@ const LandingPage = () => {
                         </Card>
                     </Grid>
 
-                    <Grid item xs={12} md={3} ml={2} mr={2} mt={2} mb={2}style={{ maxWidth: '350px' }}>
+                    <Grid
+                        item
+                        xs={12}
+                        md={3}
+                        ml={2}
+                        mr={2}
+                        mt={2}
+                        mb={2}
+                        style={{ maxWidth: '350px' }}
+                    >
                         <Card
                             style={{
                                 backgroundColor: '#FEE9E5',

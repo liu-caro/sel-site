@@ -37,3 +37,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.landingOnboardingButton {
+  background-color: var(--giraffeYellow);
+  font-family: 'Sofia Pro Soft Regular';
+  letter-spacing: 15%;
+  font-size: 13;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px;
+  box-shadow: 0px 6px 6px #999999;
+  text-transform: uppercase;
+}
+
+.responsibleDecisionMakingCategory {
+  background-color: var(--turtleGreen);
+}
+
+.selfAwarenessCategory {
+  background-color: var(--dolphinBlue);
+}
+
+.socialAwarenessCategory {
+  background-color: var(--giraffeYellow);
+}
+
+.relationshipSkillsCategory {
+  background-color: var(--tigerRed);
+}
+
+.selfManagementCategory {
+  background-color: var(--hippoPurple);
+}
+
+.categoryPageButton {
+  border: none;
+  font-family: 'Proxima Nova';
+  font-size: 14;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #999999;
+  color: var(--textColor);
+}
+
+.activityPageButton {
+  font-family: 'Sofia Pro Soft Regular';
+  text-transform: uppercase;
+  letter-spacing: 15%;
+  font-size: 13;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px #999999;
+}
+
+.relationshipSkillsActivity {
+  background-color: var(--tigerRed);
+  color: var(--darkTigerRed);
+}
+

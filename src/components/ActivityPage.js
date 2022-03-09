@@ -2,7 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import ReactPlayer from 'react-player'
 
-const ActivityPage = ({ title, overviewText, directionsText, videoUrl}) => {
+const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCategory }) => {
   return (
     <Grid
       container
@@ -21,7 +21,7 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl}) => {
         </Grid>
 
         <Grid item xs={12}>
-          <Button variant="contained">Printable Version</Button>
+          <Button variant="contained" class={buttonCategory}>Printable Version</Button>
         </Grid>
       
         <Grid item xs={12}>
@@ -41,7 +41,7 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl}) => {
         </Grid>
 
         <Grid item xs={12}>
-          <Button variant="contained">Mark as done!</Button>
+          <Button variant="contained" class={buttonCategory}>Mark as done!</Button>
         </Grid>
     </Grid>
   );
