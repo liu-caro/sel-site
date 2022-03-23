@@ -6,7 +6,12 @@ import ActivitiesPage from './screens/ActivitiesPage';
 import ProgressPage from './screens/ProgressPage';
 import ResourcesPage from './screens/ResourcesPage';
 import PrintablesPage from './screens/PrintablesPage';
+
 import RelationshipSkillsPage from './screens/SelCategories/RelationshipSkillsPage';
+import ResponsibleDecisionMakingPage from './screens/SelCategories/ResponsibleDecisionMakingPage';
+import SelfAwarenessPage from './screens/SelCategories/SelfAwarenessPage';
+import SelfManagementPage from './screens/SelCategories/SelfManagementPage';
+import SocialAwarenessPage from './screens/SelCategories/SocialAwarenessPage';
 
 import RSAskAroundActivity from './screens/RelationshipSkillsActivities/RSAskAroundActivity';
 import RSMarshmallowSkyscraperActivity from './screens/RelationshipSkillsActivities/RSMarshmallowSkyscraperActivity';
@@ -63,10 +68,11 @@ const App = () => {
           <Route path="/printables" element={<PrintablesPage />} />
 
           {/* SEL category pages */}
-          <Route
-            path="/categories/relationship-skills"
-            element={<RelationshipSkillsPage />}
-          />
+          <Route path="/categories/relationship-skills" element={<RelationshipSkillsPage />} />
+          <Route path="/categories/responsible-decision-making" element={<ResponsibleDecisionMakingPage />} />
+          <Route path="/categories/self-awareness" element={<SelfAwarenessPage />} />
+          <Route path="/categories/self-management" element={<SelfManagementPage />} />
+          <Route path="/categories/social-awareness" element={<SocialAwarenessPage />} />
 
           {/* SEL activities pages */}
           {/* activities: relationship skills */}
