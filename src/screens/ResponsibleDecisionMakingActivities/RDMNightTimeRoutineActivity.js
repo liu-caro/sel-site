@@ -3,7 +3,7 @@ import ActivityPage from '../../components/ActivityPage';
 const RDMNightTimeRoutineActivity = () => {
   return (
     <ActivityPage
-      title="Count Me Down"
+      title="Night Time Routine"
       overviewText={
         <div>
          Work with your kid to create a nighttime routine that they are relatively motivated about. 

@@ -2,10 +2,9 @@ import CategoryPage from '../../components/CategoryPage';
 
 const SocialAwarenessPage = () => {
   const slaActivities = [
-    ['Count Me Down', '/rs/count-me-down', 'relationshipSkillsCategory categoryPageButton'],
-    ['Rose, Bud, Thorn', '/', 'relationshipSkillsCategory categoryPageButton'],
-    ['Make New Friends Bingo', '/', 'relationshipSkillsCategory categoryPageButton'],
-    ['Team Puzzle', '/', 'relationshipSkillsCategory categoryPageButton']
+    ['Add It On', '/sla/add-it-on', 'socialAwarenessCategory categoryPageButton'],
+    ['Storytime', '/sla/storytime', 'socialAwarenessCategory categoryPageButton'],
+    ['Take Your Turn', '/sla/take-your-turn', 'socialAwarenessCategory categoryPageButton']
   ];
   
   return (

@@ -68,11 +68,11 @@ const App = () => {
           <Route path="/printables" element={<PrintablesPage />} />
 
           {/* SEL category pages */}
-          <Route path="/categories/relationship-skills" element={<RelationshipSkillsPage />} />
-          <Route path="/categories/responsible-decision-making" element={<ResponsibleDecisionMakingPage />} />
-          <Route path="/categories/self-awareness" element={<SelfAwarenessPage />} />
-          <Route path="/categories/self-management" element={<SelfManagementPage />} />
-          <Route path="/categories/social-awareness" element={<SocialAwarenessPage />} />
+          <Route path="/relationship-skills" element={<RelationshipSkillsPage />} />
+          <Route path="/responsible-decision-making" element={<ResponsibleDecisionMakingPage />} />
+          <Route path="/self-awareness" element={<SelfAwarenessPage />} />
+          <Route path="/self-management" element={<SelfManagementPage />} />
+          <Route path="/social-awareness" element={<SocialAwarenessPage />} />
 
           {/* SEL activities pages */}
           {/* activities: relationship skills */}

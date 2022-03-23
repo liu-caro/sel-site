@@ -2,10 +2,9 @@ import CategoryPage from '../../components/CategoryPage';
 
 const ResponsibleDecisionMakingPage = () => {
   const rdmActivities = [
-    ['Count Me Down', '/rs/count-me-down', 'relationshipSkillsCategory categoryPageButton'],
-    ['Rose, Bud, Thorn', '/', 'relationshipSkillsCategory categoryPageButton'],
-    ['Make New Friends Bingo', '/', 'relationshipSkillsCategory categoryPageButton'],
-    ['Team Puzzle', '/', 'relationshipSkillsCategory categoryPageButton']
+    ['Night Time Routine', '/rdm/night-time-routine', 'responsibleDecisionMakingCategory categoryPageButton'],
+    ['Rewards', '/rdm/rewards', 'responsibleDecisionMakingCategory categoryPageButton'],
+    ['What Would You Do?', '/rdm/what-would-you-do', 'responsibleDecisionMakingCategory categoryPageButton'],
   ];
   
   return (
