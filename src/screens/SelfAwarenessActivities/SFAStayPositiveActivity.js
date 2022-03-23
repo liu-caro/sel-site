@@ -1,6 +1,6 @@
 import ActivityPage from '../../components/ActivityPage';
 
-const RDMNightTimeRoutineActivity = () => {
+const SFAStayPositiveActivity = () => {
   return (
     <ActivityPage
       title="Stay Positive"

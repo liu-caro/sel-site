@@ -15,7 +15,7 @@ import SocialAwarenessPage from './screens/SelCategories/SocialAwarenessPage';
 
 import RSAskAroundActivity from './screens/RelationshipSkillsActivities/RSAskAroundActivity';
 import RSMarshmallowSkyscraperActivity from './screens/RelationshipSkillsActivities/RSMarshmallowSkyscraperActivity';
-import RSPeekABookActivity from './screens/RelationshipSkillsActivities/RSPeekABookActivity';
+import RSPeekABooActivity from './screens/RelationshipSkillsActivities/RSPeekABooActivity';
 import RSPuppetsActivity from './screens/RelationshipSkillsActivities/RSPuppetsActivity';
 import RSPuzzlerActivity from './screens/RelationshipSkillsActivities/RSPuzzlerActivity';
 
@@ -35,13 +35,13 @@ import SMSnackAttackActivity from './screens/SelfManagementActivities/SMSnackAtt
 import SMTakeABreatherActivity from './screens/SelfManagementActivities/SMTakeABreatherActivity';
 import SMWalkSillyActivity from './screens/SelfManagementActivities/SMWalkSillyActivity';
 
-import SLAAdditOnActivity from './screens/SocialAwarenessActivities/SLAAdditOnActivity';
-import SLAStorytimeActivity from './screens/SocialAwarenessActivities/SLAAdditOnActivity';
+import SLAAddItOnActivity from './screens/SocialAwarenessActivities/SLAAddItOnActivity';
+import SLAStorytimeActivity from './screens/SocialAwarenessActivities/SLAStorytimeActivity';
 import SLATakeYourTurnActivity from './screens/SocialAwarenessActivities/SLATakeYourTurnActivity';
 
 import RDMNightTimeRoutineActivity from './screens/ResponsibleDecisionMakingActivities/RDMNightTimeRoutineActivity';
-import RDMRewardsActivity from './screens/ResponsibleDecisionMakingActivities/SMTakeABreatherActivity';
-import RDMWhatWouldYouDoActivity from './screens/ResponsibleDecisionMakingActivities/SMWalkSillyActivity';
+import RDMRewardsActivity from './screens/ResponsibleDecisionMakingActivities/RDMRewardsActivity';
+import RDMWhatWouldYouDoActivity from './screens/ResponsibleDecisionMakingActivities/RDMWhatWouldYouDoActivity';
 
 import OnboardingWelcomePage from "./screens/OnboardingPages/OnboardingWelcomePage";
 import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivitiesPage";
@@ -78,7 +78,7 @@ const App = () => {
           {/* activities: relationship skills */}
           <Route path="/rs/marshmallow-skyscraper" element={<RSMarshmallowSkyscraperActivity />} />
           <Route path="/rs/ask-around" element={<RSAskAroundActivity />} />
-          <Route path="/rs/peek-a-boo" element={<RSPeekABookActivity />} />
+          <Route path="/rs/peek-a-boo" element={<RSPeekABooActivity />} />
           <Route path="/rs/puppets" element={<RSPuppetsActivity />} />
           <Route path="/rs/puzzler" element={<RSPuzzlerActivity />} />
 
@@ -101,7 +101,7 @@ const App = () => {
           <Route path="/sm/walk-silly" element={<SMWalkSillyActivity />} />
 
            {/* activities: social awareness */}
-           <Route path="/sla/add-it-on" element={<SLAAdditOnActivity />} />
+           <Route path="/sla/add-it-on" element={<SLAAddItOnActivity />} />
           <Route path="/sla/storytime" element={<SLAStorytimeActivity />} />
           <Route path="/sla/take-your-turn" element={<SLATakeYourTurnActivity />} />
 
