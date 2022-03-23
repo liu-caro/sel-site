@@ -14,11 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
 const pages = [
-    ['Home', '/home'],
-    ['Activities', '/activities'],
-    ['Progress', '/progress'],
-    ['Resources', '/resources'],
-    ['Printables', '/printables'],
+    ['Home', '/home']
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
