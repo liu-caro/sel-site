@@ -19,7 +19,7 @@ const SFAMakeAFaceActivity = () => {
         </div>
       }
       videoUrl="https://youtu.be/4S2yj4TB_I8"
-      buttonCategory="selfAwarenessActivity activityPageButton"
+      buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );
 };

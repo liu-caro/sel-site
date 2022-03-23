@@ -58,14 +58,14 @@ const App = () => {
         <MenuBar />
         <Routes>
           {/* home page */}
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/home" element={<ActivitiesPage />} />
           <Route path="/signup" element={<SignupPage />} />
 
           {/* main pages */}
-          <Route path="/activities" element={<ActivitiesPage />} />
+          {/* <Route path="/activities" element={<ActivitiesPage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/printables" element={<PrintablesPage />} />
+          <Route path="/printables" element={<PrintablesPage />} /> */}
 
           {/* SEL category pages */}
           <Route path="/relationship-skills" element={<RelationshipSkillsPage />} />

@@ -17,7 +17,7 @@ const SMGetSMARTActivity = () => {
         </div>
       }
       videoUrl="https://youtu.be/4S2yj4TB_I8"
-      buttonCategory="selfManagementActivity activityPageButton"
+      buttonCategory="selfManagementCategory activityPageButton"
     />
   );
 };

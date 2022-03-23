@@ -19,7 +19,7 @@ const RDMNightTimeRoutineActivity = () => {
         </div>
       }
       videoUrl="https://youtu.be/4S2yj4TB_I8"
-      buttonCategory="responsibleDecisionMakingActivity activityPageButton"
+      buttonCategory="responsibleDecisionMakingCategory activityPageButton"
     />
   );
 };
