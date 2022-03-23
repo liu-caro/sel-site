@@ -1,7 +1,7 @@
 import CategoryPage from '../../components/CategoryPage';
 
 const ResponsibleDecisionMakingPage = () => {
-  const rsActivities = [
+  const rdmActivities = [
     ['Count Me Down', '/rs/count-me-down', 'relationshipSkillsCategory categoryPageButton'],
     ['Rose, Bud, Thorn', '/', 'relationshipSkillsCategory categoryPageButton'],
     ['Make New Friends Bingo', '/', 'relationshipSkillsCategory categoryPageButton'],
@@ -13,37 +13,33 @@ const ResponsibleDecisionMakingPage = () => {
       title="Responsible Decision Making"
       overviewText={
         <div>
-          Relationship Skills is the ability to understand the
-          perspectives of others and empathize (including those from a differing
-          backgrounds to one’s own).
+          Responsible Decision Making consists of the abilities to make caring and
+          constructive choices about our behavior and social interactions across 
+          different situations.
         </div>
       }
       importanceText={
         <div>
           It is essential to:
           <ul>
-            <li>Helping us build and maintain meaningful
-              connections across race, culture, age, and distance</li>
-            <li>Supporting one another during collective grief and struggle</li>
-            <li>Collaboratively finding solutions to new obstacles</li>
+            <li>Helping us understand our personal, social, and ethical responsibilities</li>
+            <li>Reflecting on the results of our actions and choices</li>
           </ul>
         </div>
       }
       keySkillsText={
         <div>
-          It includes the capacties to:
+          It includes the capacities to:
           <ul>
-            <li>Communicate clearly</li>
-            <li>Listen actively</li>
-            <li>Cooperate</li>
-            <li>Work collaboratively to problem solve and negotiate conflict constructively</li>
-            <li>Navigate settings with differing social and cultural demands and opportunities</li>
-            <li>Provide leadership</li>
-            <li>Seek or offer help when needed</li>
+            <li>Demonstrate open-mindedness</li>
+            <li>Make reasonable judgment after looking at faccts</li>
+            <li>Anticipate consequences of our actions</li>
+            <li>Follow rules and understand the reasoning for them</li>
+            <li>Identify problems and potential solutions</li>
           </ul>
         </div>
       }
-      activities = {rsActivities}
+      activities = {rdmActivities}
     />
   );
 };

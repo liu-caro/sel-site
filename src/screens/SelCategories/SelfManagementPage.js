@@ -1,7 +1,7 @@
 import CategoryPage from '../../components/CategoryPage';
 
 const SelfManagementPage = () => {
-  const rsActivities = [
+  const smActivities = [
     ['Count Me Down', '/rs/count-me-down', 'relationshipSkillsCategory categoryPageButton'],
     ['Rose, Bud, Thorn', '/', 'relationshipSkillsCategory categoryPageButton'],
     ['Make New Friends Bingo', '/', 'relationshipSkillsCategory categoryPageButton'],
@@ -13,37 +13,31 @@ const SelfManagementPage = () => {
       title="Self Management"
       overviewText={
         <div>
-          Relationship Skills is the ability to understand the
-          perspectives of others and empathize (including those from a differing
-          backgrounds to one’s own).
+          Self Management the ability to manage our emotions, thoughts, and behaviors
+          effectively in differnet situations to achieve goals.
         </div>
       }
       importanceText={
         <div>
           It is essential to:
           <ul>
-            <li>Helping us build and maintain meaningful
-              connections across race, culture, age, and distance</li>
-            <li>Supporting one another during collective grief and struggle</li>
-            <li>Collaboratively finding solutions to new obstacles</li>
+            <li>Building effective stress management strategies</li>
+            <li>Exhibiting self-discipline and self-motivation</li>
+            <li>Setting personal goals and following a plan to accomplish them</li>
           </ul>
         </div>
       }
       keySkillsText={
         <div>
-          It includes the capacties to:
+          It includes the capacities to:
           <ul>
-            <li>Communicate clearly</li>
-            <li>Listen actively</li>
-            <li>Cooperate</li>
-            <li>Work collaboratively to problem solve and negotiate conflict constructively</li>
-            <li>Navigate settings with differing social and cultural demands and opportunities</li>
-            <li>Provide leadership</li>
-            <li>Seek or offer help when needed</li>
+            <li>Use positive skills to deal with challenging situations</li>
+            <li>Adjust behaviors appropriate in different settings</li>
+            <li>Make changes in our thinking or actions</li>
           </ul>
         </div>
       }
-      activities = {rsActivities}
+      activities = {smActivities}
     />
   );
 };

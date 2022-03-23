@@ -31,7 +31,7 @@ const RelationshipSkillsPage = () => {
       }
       keySkillsText={
         <div>
-          It includes the capacties to:
+          It includes the capacities to:
           <ul>
             <li>Communicate clearly</li>
             <li>Listen actively</li>
