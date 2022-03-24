@@ -5,8 +5,8 @@ const SelfAwarenessPage = () => {
     ['Crack A Smile', '/sfa/crack-a-smile', 'selfAwarenessCategory categoryPageButton'],
     ['Journaling', '/sfa/journaling', 'selfAwarenessCategory categoryPageButton'],
     ['Make A Face', '/sfa/make-a-face', 'selfAwarenessCategory categoryPageButton'],
-    ['Morning Sunshine', '/sfa/morning-sunshine', 'selfAwarenessCategory categoryPageButton']
-    ['Mountain, River, Valley', '/sfa/mountain-river-valley', 'selfAwarenessCategory categoryPageButton']
+    ['Morning Sunshine', '/sfa/morning-sunshine', 'selfAwarenessCategory categoryPageButton'],
+    ['Mountain, River, Valley', '/sfa/mountain-river-valley', 'selfAwarenessCategory categoryPageButton'],
     ['Stay Positive', '/sfa/stay-positive', 'selfAwarenessCategory categoryPageButton']
   ];
   
