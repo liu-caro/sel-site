@@ -106,7 +106,7 @@ const SignupPage = () => {
                 <Grid item align={'center'} xs={12}>
                     <Typography variant='subtitle1'>
                         <span> Returning User? </span>
-                        <Link to='/'>Log in here</Link>
+                        <Link to='/login'>Log in here</Link>
                     </Typography>
                 </Grid>
                 <Grid item align={'center'} xs={12}>
