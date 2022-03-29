@@ -2,10 +2,11 @@ import CategoryPage from '../../components/CategoryPage';
 
 const RelationshipSkillsPage = () => {
   const rsActivities = [
-    ['Count Me Down', '/rs/count-me-down', 'relationshipSkillsCategory categoryPageButton'],
-    ['Rose, Bud, Thorn', '/', 'relationshipSkillsCategory categoryPageButton'],
-    ['Make New Friends Bingo', '/', 'relationshipSkillsCategory categoryPageButton'],
-    ['Team Puzzle', '/', 'relationshipSkillsCategory categoryPageButton']
+    ['Ask Around', '/rs/ask-around', 'relationshipSkillsCategory categoryPageButton'],
+    ['Marshmallow Skyscraper', '/rs/marshmallow-skyscraper', 'relationshipSkillsCategory categoryPageButton'],
+    ['Peek A Boo', '/rs/peek-a-boo', 'relationshipSkillsCategory categoryPageButton'],
+    ['Puppets', '/rs/puppets', 'relationshipSkillsCategory categoryPageButton'],
+    ['Puzzler', '/rs/puzzler', 'relationshipSkillsCategory categoryPageButton']
   ];
   
   return (
@@ -31,7 +32,7 @@ const RelationshipSkillsPage = () => {
       }
       keySkillsText={
         <div>
-          It includes the capacties to:
+          It includes the capacities to:
           <ul>
             <li>Communicate clearly</li>
             <li>Listen actively</li>
