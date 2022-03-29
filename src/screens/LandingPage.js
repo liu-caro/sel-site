@@ -42,7 +42,18 @@ const LandingPage = () => {
                             variant='contained'
                             class='landingOnboardingButton'
                         >
-                            Sign up / Log in
+                            Sign up
+                        </Button>
+                    </Link>
+                </Grid>
+
+                <Grid item xs={12} my={3}>
+                    <Link to='/login' style={{ textDecoration: 'none' }}>
+                        <Button
+                            variant='contained'
+                            class='landingOnboardingButton'
+                        >
+                            Log in
                         </Button>
                     </Link>
                 </Grid>
