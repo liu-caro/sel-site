@@ -6,6 +6,7 @@ import { firebaseAuth } from '../firebase-config';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import useInput from '../hooks/useInput';
 import { useState } from 'react';
+import { useStyles } from '../utils/theme';
 
 const SignupPage = () => {
     const email = useInput('');
@@ -13,6 +14,7 @@ const SignupPage = () => {
     const [error, setError] = useState();
     let navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
+    const classes = useStyles();
     return (
         <Grid
             container
@@ -62,6 +64,7 @@ const SignupPage = () => {
                         id='child-age'
                         label="Child's Age"
                         variant='filled'
+                        InputProps={{ className: classes.input }}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -72,6 +75,7 @@ const SignupPage = () => {
                         variant='filled'
                         value={email.value}
                         onChange={email.onChange}
+                        InputProps={{ className: classes.input }}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -80,6 +84,7 @@ const SignupPage = () => {
                         id='confirm-email'
                         label='Confirm Email'
                         variant='filled'
+                        InputProps={{ className: classes.input }}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -91,6 +96,7 @@ const SignupPage = () => {
                         variant='filled'
                         value={password.value}
                         onChange={password.onChange}
+                        InputProps={{ className: classes.input }}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -100,6 +106,7 @@ const SignupPage = () => {
                         label='Confirm Password'
                         type='password'
                         variant='filled'
+                        InputProps={{ className: classes.input }}
                     />
                 </Grid>
 

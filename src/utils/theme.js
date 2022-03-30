@@ -2,6 +2,7 @@
 // https://mui.com/customization/typography/
 
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { makeStyles} from "@material-ui/core/styles";
 
 // Typography choices
 let sofiaProSoftMedium = 'Sofia Pro Soft Medium';
@@ -76,8 +77,17 @@ let theme = createTheme({
 });
 theme = responsiveFontSizes(theme);
 
+const useStyles = makeStyles((theme) => ({
+    input: {
+      background: lightDolphinBlue,
+      fontFamily: proximaNova, defaultType,
+      fontSize: paragraphSize
+    }
+  }));
+
 export { 
     theme,
+    useStyles,
     turtleGreen,
     dolphinBlue,
     giraffeYellow,
