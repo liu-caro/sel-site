@@ -2,33 +2,38 @@ import { useState, useEffect } from 'react';
 import { firebaseDB } from '../firebase-config';
 import { set, ref, onValue } from 'firebase/database';
 
-const useFirebaseDB = (collection) => {
-    const [docs, setDocs] = useState([]);
+const useFirebaseDB = (userId) => {
+    const [userActivityCount, setUserActivityCount] = useState([]);
 
     useEffect(() => {
-        const databaseRef = firebaseDB.ref(collection);
-        databaseRef.on('value', (snapshot) => {
-            let documents = [];
-            snapshot.forEach((doc) => {
-                const value = doc.val();
-                if (value)
-                    documents.push({
-                        [value?.id]: {
-                            activityCount: value.activityCount,
-                        },
-                    });
-            });
-            setDocs(documents);
+        const userActivityCountRef = ref(firebaseDB, 'users/' + userId + '/activityCount');
+        onValue(userActivityCountRef, (snapshot) => {
+            const data = snapshot.val();
+            setUserActivityCount(data);
         });
-    }, [collection]);
+    }, [userId, userActivityCount]);
 
-    const writeUserData = (userId, progress) => {
-        set(ref(firebaseDB, userId), {
-            activityCount: progress,
+    const initializeUserData = () => {
+        set(ref(firebaseDB, 'users/' + userId), {
+            activityCount: 0,
+            // lastResetDate: lastResetDate
         });
     };
 
-    return { docs, writeUserData };
+    const updateUserData = (activityCount) => {
+        set(ref(firebaseDB, 'users/' + userId), {
+            activityCount: activityCount,
+        });
+    };
+
+    // const resetUserData = (userId, lastResetDate) => {
+    //     set(ref(firebaseDB, 'users/' + userId), {
+    //         activityCount: 0,
+    //         lastResetDate: lastResetDate
+    //     });
+    // };
+
+    return { userActivityCount, initializeUserData, updateUserData };
 };
 
 export default useFirebaseDB;
