@@ -7,7 +7,6 @@ import { LinearProgressWithLabel } from '../components/LinearProgressWithLabel';
 const SelCard = ({
     title,
     description,
-    progress,
     color,
     internalLink = '/activities',
 }) => {
@@ -24,10 +23,6 @@ const SelCard = ({
                         <br />
                         <Typography variant='body1'>{description}</Typography>
                         <br />
-                        <LinearProgressWithLabel
-                            variant='determinate'
-                            value={progress}
-                        />
                     </CardContent>
                 </MuiCard>
             </Link>

@@ -19,7 +19,6 @@ const ActivitiesPage = () => {
         <SelCard
           title={'Responsible Decision Making'}
           description={'Understanding how our decisions can impact others and ourselves'} 
-          progress={72}
           color={'#00A87D40'} 
           internalLink={'/responsible-decision-making'} />
       </Grid>
@@ -28,7 +27,6 @@ const ActivitiesPage = () => {
         <SelCard
           title={'Self Awareness'}
           description={'Understanding one’s own emotions, thoughts, and values and how they influence behavior across contexts'} 
-          progress={52}
           color={'#82CDED40'} 
           internalLink={'/self-awareness'} />
       </Grid>
@@ -37,7 +35,6 @@ const ActivitiesPage = () => {
         <SelCard
           title={'Social Awareness'}
           description={'Understanding the perspectives of others and empathize (including those from a differing backgrounds to one’s own)'} 
-          progress={32}
           color={'#FBBD3340'} 
           internalLink={'/social-awareness'} />
       </Grid>
@@ -45,8 +42,7 @@ const ActivitiesPage = () => {
       <Grid item xs={12} md={6} m={2}>
         <SelCard
           title={'Relationship Skills'}
-          description={'Establishing and maintaining healthy and supportive relationships to navigate settings with diverse individuals and groups'} 
-          progress={92}
+          description={'Establishing and maintaining healthy and supportive relationships to navigate settings with diverse individuals and groups'}           
           color={'#FEE9E5'}
           internalLink={'/relationship-skills'} />
       </Grid>
@@ -55,7 +51,6 @@ const ActivitiesPage = () => {
         <SelCard
           title={'Self Management'}
           description={'Managing one’s emotions, thoughts, and behaviors effectively in different situations and to achieve goals and aspirations.'} 
-          progress={12}
           color={'#592DB540'} 
           internalLink={'/self-management'} />
       </Grid>
