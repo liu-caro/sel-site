@@ -11,6 +11,7 @@ import TigerPNG from '../assets/sel-animals/TigerPNG.png';
 const ActivitiesPage = () => {
 
   const [progress, setProgress] = useState(60);
+  const [signin, setSignin] = useState(true);
 
   return (
     <Grid
@@ -21,10 +22,17 @@ const ActivitiesPage = () => {
       spacing={2}
       p={8}
     >
-      <Grid item xs={12}>
-        <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month</Typography>
-        <LinearProgressWithLabel variant='determinate' value={progress} />
-      </Grid>
+      
+      {signin ?
+        <Grid item xs={12}>
+          <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month</Typography>
+          <LinearProgressWithLabel variant='determinate' value={progress} />
+        </Grid>
+        :
+        <Grid item xs={12}>
+          <Typography variant="subtitle2" align='center'>Please sign in to have your activity progress save!</Typography>
+        </Grid>
+      }
 
       <Grid item xs={12}>
         <Typography variant="h1" align='center'>SEL Activities by Skill Category</Typography>
