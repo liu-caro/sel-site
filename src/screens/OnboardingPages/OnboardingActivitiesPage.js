@@ -29,14 +29,8 @@ const OnboardingActivitiesPage = () => {
       </Grid>
 
       <Grid item xs={12}>
-      <Link to="/home">
-          <StyledLink variant="text">Skip tutorial</StyledLink>
-        </Link>
-      </Grid>
-
-      <Grid item xs={12}>
-      <Link to="/onboarding-printables" style={{ textDecoration: 'none' }}>
-          <Button variant="contained" class="landingOnboardingButton">Next</Button>
+      <Link to="/home" style={{ textDecoration: 'none' }}>
+          <Button variant="contained" class="landingOnboardingButton">Get started!</Button>
         </Link>
       </Grid>
 

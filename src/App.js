@@ -45,7 +45,6 @@ import RDMWhatWouldYouDoActivity from './screens/ResponsibleDecisionMakingActivi
 
 import OnboardingWelcomePage from "./screens/OnboardingPages/OnboardingWelcomePage";
 import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivitiesPage";
-import OnboardingPrintablesPage from "./screens/OnboardingPages/OnboardingPrintablesPage";
 import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
 import SignupPage from './screens/SignupPage';
@@ -117,7 +116,6 @@ const App = () => {
           {/* Onboarding pages */}
           <Route path="/onboarding-welcome" element={<OnboardingWelcomePage />} />
           <Route path="/onboarding-activities" element={<OnboardingActivitiesPage />} />
-          <Route path="/onboarding-printables" element={<OnboardingPrintablesPage />} />
         </Routes>
       </Router>
     </ThemeProvider>
