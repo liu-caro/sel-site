@@ -10,7 +10,7 @@ import TigerPNG from '../assets/sel-animals/TigerPNG.png';
 
 const ActivitiesPage = () => {
 
-  const [progress, setProgress] = useState(60);
+  const [activityCount, setActivityCount] = useState(3);
   const [signin, setSignin] = useState(true);
 
   return (
@@ -26,7 +26,7 @@ const ActivitiesPage = () => {
       {signin ?
         <Grid item xs={12}>
           <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month</Typography>
-          <LinearProgressWithLabel variant='determinate' value={progress} />
+          <LinearProgressWithLabel variant='determinate' value={activityCount * 20} />
         </Grid>
         :
         <Grid item xs={12}>
