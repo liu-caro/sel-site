@@ -2,11 +2,11 @@ import CategoryPage from '../../components/CategoryPage';
 
 const RelationshipSkillsPage = () => {
   const rsActivities = [
-    ['Ask Around', '/rs/ask-around', 'relationshipSkillsCategory categoryPageButton'],
-    ['Marshmallow Skyscraper', '/rs/marshmallow-skyscraper', 'relationshipSkillsCategory categoryPageButton'],
-    ['Peek A Boo', '/rs/peek-a-boo', 'relationshipSkillsCategory categoryPageButton'],
-    ['Puppets', '/rs/puppets', 'relationshipSkillsCategory categoryPageButton'],
-    ['Puzzler', '/rs/puzzler', 'relationshipSkillsCategory categoryPageButton']
+    ['Ask Around', 'Simple', '5 min', '/rs/ask-around', 'relationshipSkillsCategory categoryPageButton'],
+    ['Marshmallow Skyscraper', 'Challenging', '20+ min', '/rs/marshmallow-skyscraper', 'relationshipSkillsCategory categoryPageButton'],
+    ['Peek A Boo', 'Simple', '5 min', '/rs/peek-a-boo', 'relationshipSkillsCategory categoryPageButton'],
+    ['Puppets', 'Challenging', '20+ min', '/rs/puppets', 'relationshipSkillsCategory categoryPageButton'],
+    ['Puzzler', 'Simple', '20+ min', '/rs/puzzler', 'relationshipSkillsCategory categoryPageButton']
   ];
   
   return (
