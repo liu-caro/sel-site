@@ -2,7 +2,6 @@ import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import activitiesPage from './../../assets/onboardingImages/activitiesPage.svg';
 import { Link } from 'react-router-dom';
-import { StyledLink } from "../../utils/styledLink";
 
 const OnboardingActivitiesPage = () => {
   return (

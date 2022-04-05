@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuBar from './components/MenuBar';
 import HomePage from './screens/HomePage';
 import ActivitiesPage from './screens/ActivitiesPage';
-import ProgressPage from './screens/ProgressPage';
-import ResourcesPage from './screens/ResourcesPage';
-import PrintablesPage from './screens/PrintablesPage';
 
 import RelationshipSkillsPage from './screens/SelCategories/RelationshipSkillsPage';
 import ResponsibleDecisionMakingPage from './screens/SelCategories/ResponsibleDecisionMakingPage';
