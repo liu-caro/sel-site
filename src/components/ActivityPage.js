@@ -1,8 +1,8 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Chip } from "@mui/material";
 import Button from "@mui/material/Button";
 import ReactPlayer from 'react-player'
 
-const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCategory }) => {
+const ActivityPage = ({ title, chipCategory, overviewText, directionsText, videoUrl, buttonCategory }) => {
   return (
     <Grid
       container
@@ -15,13 +15,15 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCat
         <Grid item xs={12}>
           <Typography variant="h1">{title}</Typography>
         </Grid>
+
+        <Grid item xs={12}>
+          <Chip label="Difficulty" class={chipCategory} />
+       
+          <Chip label="Time" class={chipCategory} />
+        </Grid>
         
         <Grid item xs={12}>
           <Typography variant="body1"> {overviewText} </Typography>
-        </Grid>
-
-        <Grid item xs={12}>
-          <Button variant="contained" class={buttonCategory}>Printable Version</Button>
         </Grid>
       
         <Grid item xs={12}>
