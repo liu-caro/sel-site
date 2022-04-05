@@ -2,8 +2,7 @@ import { Grid, Typography, Chip } from '@mui/material';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-
-const CategoryPage = ({ activities, timeAndDifficulties, title, overviewText, importanceText, keySkillsText }) => {
+const CategoryPage = ({ activities, title, overviewText, importanceText, keySkillsText }) => {
 
     return (
         <Grid
@@ -38,21 +37,24 @@ const CategoryPage = ({ activities, timeAndDifficulties, title, overviewText, im
 
             {activities.map(([activityName, difficulty, time, activityLink, buttonCategory]) => {
                 return (
-                    <Grid key={activityName} container spacing={1}>
-                        <Grid container item xs={6}  style={{ textDecoration: 'none', flex: 1 }}>
-                            <Link to={activityLink} style={{ textDecoration: 'none'}}>
-                                <Button variant="contained" class={buttonCategory}>{activityName}</Button>
-                            </Link>
-                        </Grid>
-                        <br />
-                        <Grid container item xs={6} style={{ flex: 1 }}>
-                            <Chip label={difficulty} class='chip' />
-                            <Chip label={time} class='chip' /> 
-                        </Grid>
-                            
+                    <Grid item key={activityName} xs={12}>
+                        <Link
+                            to={activityLink}
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Button
+                                variant='contained'
+                                class={buttonCategory}
+                                sx={{ width: 300 }}
+                            >
+                                {activityName}
+                                <br />
+                                <Chip sx={{ml:2, mt:1, fontFamily: 'Proxima Nova'}} label={difficulty}/>
+                                <Chip sx={{ml:1, mt:1, fontFamily: 'Proxima Nova'}} label={time}/>
+                            </Button>
+                        </Link>
                     </Grid>
-                )
-            })}
+                )})}
         </Grid>
     );
 };
