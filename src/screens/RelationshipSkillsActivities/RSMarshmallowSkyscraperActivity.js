@@ -4,6 +4,9 @@ const RSMarshmallowSkyscraperActivity = () => {
   return (
     <ActivityPage
       title="Marshmallow Skyscraper"
+      chipCategory="relationshipSkillsCategory chip"
+      difficulty="Challenging"
+      time="20+ min"
       overviewText={
         <div>
         Work together to build a tower with your kid out of spaghetti and marshmallows and see 

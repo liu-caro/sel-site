@@ -4,6 +4,9 @@ const RSPuzzlerActivity = () => {
   return (
     <ActivityPage
       title="Puzzler"
+      chipCategory="relationshipSkillsCategory chip"
+      difficulty="Simple"
+      time="20+ min"
       overviewText={
         <div>
           Complete a puzzle together to strengthen collaboration skills and problem-solving. 

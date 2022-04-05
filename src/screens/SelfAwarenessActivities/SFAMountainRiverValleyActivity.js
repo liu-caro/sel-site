@@ -4,6 +4,9 @@ const SFAMountainRiverValleyActivity = () => {
   return (
     <ActivityPage
       title="Mountain, River, Valley"
+      chipCategory="selfAwarenessCategory chip"
+      difficulty="Simple"
+      time="10 min"
       overviewText={
         <div>
          At the end of the day, ask your kid what the best part of their day was (the mountain), 

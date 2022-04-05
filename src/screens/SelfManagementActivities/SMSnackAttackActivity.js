@@ -4,6 +4,9 @@ const SMSnackAttackActivity = () => {
   return (
     <ActivityPage
       title="Snack Attack"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Challenging"
+      time="20+ min"
       overviewText={
         <div>
          Delaying instant gratification for a future reward is something we all struggle with 

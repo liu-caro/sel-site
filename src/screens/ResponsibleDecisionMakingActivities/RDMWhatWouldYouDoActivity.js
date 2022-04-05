@@ -4,6 +4,9 @@ const RDMWhatWouldYouDoActivity = () => {
   return (
     <ActivityPage
       title="What Would You Do?"
+      chipCategory="responsibleDecisionMakingCategory chip"
+      difficulty="Simple"
+      time="5 min"
       overviewText={
         <div>
          Have your kid practice putting themselves in someone else's shoes. Take turns asking 

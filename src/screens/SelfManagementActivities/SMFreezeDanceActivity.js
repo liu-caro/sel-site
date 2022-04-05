@@ -4,6 +4,9 @@ const SMFreezeDanceActivity = () => {
   return (
     <ActivityPage
       title="Freeze Dance"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Moderate"
+      time="20+ min"
       overviewText={
         <div>
          This may be an older, more commonly played game but it remains a great simple way to practice 

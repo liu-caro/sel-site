@@ -4,6 +4,9 @@ const SMGetSMARTActivity = () => {
   return (
     <ActivityPage
       title="Get SMART"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Simple"
+      time="5 min"
       overviewText={
         <div>
          Set a SMART (Specific, Measurable, Agreed-Upon, Relevant, and Time-Bound) goal for the day, week, or month. 
