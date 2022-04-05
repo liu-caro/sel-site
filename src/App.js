@@ -45,10 +45,10 @@ import RDMWhatWouldYouDoActivity from './screens/ResponsibleDecisionMakingActivi
 
 import OnboardingWelcomePage from "./screens/OnboardingPages/OnboardingWelcomePage";
 import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivitiesPage";
-import OnboardingPrintablesPage from "./screens/OnboardingPages/OnboardingPrintablesPage";
 import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
 import SignupPage from './screens/SignupPage';
+import LoginPage from './screens/LoginPage';
 import { theme } from './utils/theme';
 
 const App = () => {
@@ -60,6 +60,7 @@ const App = () => {
           {/* home page */}
           <Route path="/home" element={<ActivitiesPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
 
           {/* main pages */}
           {/* <Route path="/activities" element={<ActivitiesPage />} />
@@ -117,7 +118,6 @@ const App = () => {
           {/* Onboarding pages */}
           <Route path="/onboarding-welcome" element={<OnboardingWelcomePage />} />
           <Route path="/onboarding-activities" element={<OnboardingActivitiesPage />} />
-          <Route path="/onboarding-printables" element={<OnboardingPrintablesPage />} />
         </Routes>
       </Router>
     </ThemeProvider>

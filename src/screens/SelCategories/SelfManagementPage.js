@@ -5,7 +5,7 @@ const SelfManagementPage = () => {
     ['Freeze Dance', '/sm/freeze-dance', 'selfManagementCategory categoryPageButton'],
     ['Get SMART', '/sm/get-smart', 'selfManagementCategory categoryPageButton'],
     ['Grounded In A Good Way', '/sm/grounded-in-a-good-way', 'selfManagementCategory categoryPageButton'],
-    ['Red Light, Green Light', '/sm/red-light-green-light', 'selfManagementCategory categoryPageButton']
+    ['Red Light, Green Light', '/sm/red-light-green-light', 'selfManagementCategory categoryPageButton'],
     ['Simon Says', '/sm/simon-says', 'selfManagementCategory categoryPageButton'],
     ['Snack Attack', '/sm/snack-attack', 'selfManagementCategory categoryPageButton'],
     ['Take A Breather', '/sm/take-a-breather', 'selfManagementCategory categoryPageButton'],

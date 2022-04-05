@@ -1,13 +1,13 @@
 import { Alert, Grid, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 import TextField from '@mui/material/TextField';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { firebaseAuth } from '../firebase-config';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import useInput from '../hooks/useInput';
 import { useState } from 'react';
 
-const SignupPage = () => {
+const LoginPage = () => {
     const email = useInput('');
     const password = useInput('');
     const [error, setError] = useState();
@@ -24,13 +24,13 @@ const SignupPage = () => {
         >
             <Grid item xs={12} mb={2}>
                 <Typography variant='h1' align='center'>
-                    Create an Account
+                    Login
                 </Typography>
             </Grid>
 
             {error ? (
                 <Alert severity='error'>
-                    The following error occured when creating your account:
+                    The following error occured when logging into your account:
                     <br />
                     {error.errorMessage}
                 </Alert>
@@ -38,15 +38,7 @@ const SignupPage = () => {
 
             <Grid item xs={12} style={{ maxWidth: 500 }} mb={4}>
                 <Typography variant='body2' align='left'>
-                    Users can browse all activities without an account, but with
-                    an account you can keep track of your child’s progress in
-                    SEL skills and we can recommend activities which are best
-                    suited for your child’s age!
-                </Typography>
-                <br />
-                <Typography variant='body2' align='left'>
-                    We currently do not and will never share your information
-                    with third parties.
+                    Welcome back to your SEL portal!
                 </Typography>
             </Grid>
 
@@ -56,14 +48,6 @@ const SignupPage = () => {
                 style={{ maxWidth: 500 }}
                 justifyContent='center'
             >
-                <Grid item xs={12}>
-                    <TextField
-                        fullWidth
-                        id='child-age'
-                        label="Child's Age"
-                        variant='filled'
-                    />
-                </Grid>
                 <Grid item xs={12}>
                     <TextField
                         fullWidth
@@ -77,37 +61,13 @@ const SignupPage = () => {
                 <Grid item xs={12}>
                     <TextField
                         fullWidth
-                        id='confirm-email'
-                        label='Confirm Email'
-                        variant='filled'
-                    />
-                </Grid>
-                <Grid item xs={12}>
-                    <TextField
-                        fullWidth
                         id='password'
-                        label='Create Password'
+                        label='Password'
                         type='password'
                         variant='filled'
                         value={password.value}
                         onChange={password.onChange}
                     />
-                </Grid>
-                <Grid item xs={12}>
-                    <TextField
-                        fullWidth
-                        id='confirm-password'
-                        label='Confirm Password'
-                        type='password'
-                        variant='filled'
-                    />
-                </Grid>
-
-                <Grid item align={'center'} xs={12}>
-                    <Typography variant='subtitle1'>
-                        <span> Returning User? </span>
-                        <Link to='/login'>Log in here</Link>
-                    </Typography>
                 </Grid>
                 <Grid item align={'center'} xs={12}>
                     <LoadingButton
@@ -115,16 +75,15 @@ const SignupPage = () => {
                         variant='contained'
                         onClick={() => {
                             setIsLoading(true);
-                            createUserWithEmailAndPassword(
+                            signInWithEmailAndPassword(
                                 firebaseAuth,
                                 email.value,
                                 password.value
                             )
                                 .then((userCredential) => {
-                                    // Signed in
                                     const user = userCredential.user;
                                     console.log(user);
-                                    navigate('/onboarding-welcome');
+                                    navigate('/home');
                                 })
                                 .catch((error) => {
                                     const errorCode = error.code;
@@ -139,12 +98,13 @@ const SignupPage = () => {
                                 .finally(() => setIsLoading(false));
                         }}
                     >
-                        Sign Up!
+                        Log in
                     </LoadingButton>
                 </Grid>
             </Grid>
+
         </Grid>
     );
 };
 
-export default SignupPage;
+export default LoginPage;
