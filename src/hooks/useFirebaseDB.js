@@ -22,11 +22,10 @@ const useFirebaseDB = () => {
         }
     }, [curUserId, userActivityCount]);
 
-    const initializeUserData = (userId, age) => {
+    const initializeUserData = (userId) => {
         if (userId) {
             set(ref(firebaseDB, 'users/' + userId), {
                 activityCount: 0,
-                age: age
                 // lastResetDate: lastResetDate
             });
         }
