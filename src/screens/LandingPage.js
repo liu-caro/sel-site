@@ -36,8 +36,11 @@ const LandingPage = () => {
                     </Typography>
                 </Grid>
 
-                <Grid item xs={12} my={3}>
-                    <Link to='/signup' style={{ textDecoration: 'none', marginBottom: -10 }}>
+                <Grid item xs={12}>
+                    <Link
+                        to='/signup'
+                        style={{ textDecoration: 'none', marginRight: 10 }}
+                    >
                         <Button
                             variant='contained'
                             class='landingOnboardingButton'
@@ -45,10 +48,7 @@ const LandingPage = () => {
                             Sign up
                         </Button>
                     </Link>
-                </Grid>
-
-                <Grid item xs={12} my={3}>
-                    <Link to='/login' style={{ textDecoration: 'none'}}>
+                    <Link to='/login' style={{ textDecoration: 'none' }}>
                         <Button
                             variant='contained'
                             class='landingOnboardingButton'
