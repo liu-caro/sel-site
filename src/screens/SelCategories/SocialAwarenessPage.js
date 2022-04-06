@@ -2,9 +2,9 @@ import CategoryPage from '../../components/CategoryPage';
 
 const SocialAwarenessPage = () => {
   const slaActivities = [
-    ['Add It On', '/sla/add-it-on', 'socialAwarenessCategory categoryPageButton'],
-    ['Storytime', '/sla/storytime', 'socialAwarenessCategory categoryPageButton'],
-    ['Take Your Turn', '/sla/take-your-turn', 'socialAwarenessCategory categoryPageButton']
+    ['Add It On', 'Challenging', '10 min', '/sla/add-it-on', 'socialAwarenessCategory categoryPageButton'],
+    ['Storytime', 'Challenging', '20+ min', '/sla/storytime', 'socialAwarenessCategory categoryPageButton'],
+    ['Take Your Turn', 'Simple', '10 min', '/sla/take-your-turn', 'socialAwarenessCategory categoryPageButton']
   ];
   
   return (

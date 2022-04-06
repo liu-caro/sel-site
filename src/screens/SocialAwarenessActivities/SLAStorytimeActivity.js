@@ -4,6 +4,9 @@ const SLAStorytimeActivity = () => {
   return (
     <ActivityPage
       title="Storytime"
+      chipCategory="socialAwarenessCategory chip"
+      difficulty="Challenging"
+      time="20+ min"
       overviewText={
         <div>
          Understanding their peer’s perspectives will strengthen your child’s capacity for empathy 

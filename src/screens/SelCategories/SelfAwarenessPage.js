@@ -2,12 +2,12 @@ import CategoryPage from '../../components/CategoryPage';
 
 const SelfAwarenessPage = () => {
   const sfaActivities = [
-    ['Crack A Smile', '/sfa/crack-a-smile', 'selfAwarenessCategory categoryPageButton'],
-    ['Journaling', '/sfa/journaling', 'selfAwarenessCategory categoryPageButton'],
-    ['Make A Face', '/sfa/make-a-face', 'selfAwarenessCategory categoryPageButton'],
-    ['Morning Sunshine', '/sfa/morning-sunshine', 'selfAwarenessCategory categoryPageButton'],
-    ['Mountain, River, Valley', '/sfa/mountain-river-valley', 'selfAwarenessCategory categoryPageButton'],
-    ['Stay Positive', '/sfa/stay-positive', 'selfAwarenessCategory categoryPageButton']
+    ['Crack A Smile', 'Moderate', '15 min', '/sfa/crack-a-smile', 'selfAwarenessCategory categoryPageButton'],
+    ['Journaling', 'Simple', '15 min', '/sfa/journaling', 'selfAwarenessCategory categoryPageButton'],
+    ['Make A Face', 'Simple', '10 min', '/sfa/make-a-face', 'selfAwarenessCategory categoryPageButton'],
+    ['Morning Sunshine', 'Simple', '5 min', '/sfa/morning-sunshine', 'selfAwarenessCategory categoryPageButton'],
+    ['Mountain, River, Valley', 'Simple', '10 min', '/sfa/mountain-river-valley', 'selfAwarenessCategory categoryPageButton'],
+    ['Stay Positive', 'Simple', '15 min', '/sfa/stay-positive', 'selfAwarenessCategory categoryPageButton']
   ];
   
   return (

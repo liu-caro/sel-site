@@ -4,6 +4,9 @@ const SLATakeYourTurnActivity = () => {
   return (
     <ActivityPage
       title="Take Your Turn"
+      chipCategory="socialAwarenessCategory chip"
+      difficulty="Simple"
+      time="10 min"
       overviewText={
         <div>
          Learning to share is an important, yet occasionally difficult skill for preschoolers. 

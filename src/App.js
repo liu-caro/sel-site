@@ -97,7 +97,7 @@ const App = () => {
           <Route path="/sm/grounded-in-a-good-way" element={<SMGroundedInAGoodWayActivity />} />
           <Route path="/sm/red-light-green-light" element={<SMRedLightGreenLightActivity />} />
           <Route path="/sm/simon-says" element={<SMSimonSaysActivity />} />
-          <Route path="/sm/snack-sttack" element={<SMSnackAttackActivity />} />
+          <Route path="/sm/snack-attack" element={<SMSnackAttackActivity />} />
           <Route path="/sm/take-a-breather" element={<SMTakeABreatherActivity />} />
           <Route path="/sm/walk-silly" element={<SMWalkSillyActivity />} />
 

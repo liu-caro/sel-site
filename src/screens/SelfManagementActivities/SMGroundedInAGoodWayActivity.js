@@ -4,6 +4,9 @@ const SMGroundedInAGoodWayActivity = () => {
   return (
     <ActivityPage
       title="Grounded in a Good Way"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Simple"
+      time="5 min"
       overviewText={
         <div>
          Teach your child basic grounding skills (often used in mindfulness meditation). 

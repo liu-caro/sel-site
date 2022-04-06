@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Chip } from "@mui/material";
 import Button from "@mui/material/Button";
 import ReactPlayer from 'react-player';
 import ConfettiGenerator from 'confetti-js';
@@ -8,7 +8,7 @@ import GiraffeSVG from '../assets/sel-animals/GiraffeSVG.svg';
 import TurtleSVG from '../assets/sel-animals/TurtleSVG.svg';
 import TigerSVG from '../assets/sel-animals/TigerSVG.svg';
 
-const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCategory }) => {
+const ActivityPage = ({ title, difficulty, time, overviewText, directionsText, videoUrl, buttonCategory }) => {
 
   const handleClick = (() => {
     const confettiSettings = {
@@ -35,38 +35,38 @@ const ActivityPage = ({ title, overviewText, directionsText, videoUrl, buttonCat
       spacing={2}
       p={4}
     >
-      <canvas id='my-canvas' style={{ position: 'absolute' }} />
-      <Grid item xs={12}>
-        <Typography variant="h1">{title}</Typography>
-      </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h1">{title}</Typography>
+        </Grid>
 
-      <Grid item xs={12}>
-        <Typography variant="body1"> {overviewText} </Typography>
-      </Grid>
+        <Grid item xs={12}>
+          <Chip label={difficulty} class={chipCategory} />
+          <Chip label={time} class={chipCategory} />
+        </Grid>
+        
+        <Grid item xs={12}>
+          <Typography variant="body1"> {overviewText} </Typography>
+        </Grid>
+      
+        <Grid item xs={12}>
+          <Typography variant="h2">Directions</Typography>
+        </Grid>
+        
+        <Grid item xs={12}>
+          <Typography variant="body1"> {directionsText} </Typography>
+        </Grid>
+        
+        <Grid item xs={12}>
+          <Typography variant="h2">Instructional Video</Typography>
+        </Grid>
 
-      <Grid item xs={12}>
-        <Button variant="contained" class={buttonCategory}>Printable Version</Button>
-      </Grid>
+        <Grid item xs={6}>
+          <ReactPlayer url={videoUrl} style={{ maxWidth: '300px'}}/>
+        </Grid>
 
-      <Grid item xs={12}>
-        <Typography variant="h2">Directions</Typography>
-      </Grid>
-
-      <Grid item xs={12}>
-        <Typography variant="body1"> {directionsText} </Typography>
-      </Grid>
-
-      <Grid item xs={12}>
-        <Typography variant="h2">Instructional Video</Typography>
-      </Grid>
-
-      <Grid item xs={6}>
-        <ReactPlayer url={videoUrl} style={{ maxWidth: '300px' }} />
-      </Grid>
-
-      <Grid item xs={12}>
-        <Button onClick={handleClick} variant="contained" class={buttonCategory}>Mark as done!</Button>
-      </Grid>
+        <Grid item xs={12}>
+          <Button variant="contained" class={buttonCategory}>Mark as done!</Button>
+        </Grid>
     </Grid>
   );
 };

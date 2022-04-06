@@ -4,6 +4,9 @@ const SFAMakeAFaceActivity = () => {
   return (
     <ActivityPage
       title="Make-A-Face"
+      chipCategory="selfAwarenessCategory chip"
+      difficulty="Simple"
+      time="10 min"
       overviewText={
         <div>
          Take turns making facial expressions with your child and guessing the emotion the 

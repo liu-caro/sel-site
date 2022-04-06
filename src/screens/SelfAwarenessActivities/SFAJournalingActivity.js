@@ -4,6 +4,9 @@ const SFAJournalingActivity = () => {
   return (
     <ActivityPage
       title="Journaling"
+      chipCategory="selfAwarenessCategory chip"
+      difficulty="Simple"
+      time="15 min"
       overviewText={
         <div>
          While your kid may be too young to write, they can start a daily journal drawing of their day. 

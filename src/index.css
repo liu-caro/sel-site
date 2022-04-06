@@ -78,6 +78,8 @@ code {
   border-radius: 5px;
   box-shadow: 0px 2px 4px #999999;
   color: var(--textColor);
+  align-items: center;
+  min-width: 300px;
 }
 
 .activityPageButton {
@@ -94,5 +96,17 @@ code {
 .relationshipSkillsActivity {
   background-color: var(--tigerRed);
   color: var(--darkTigerRed);
+}
+
+.chip {
+  font-family: 'Proxima Nova';
+  font-size: 11pt;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px #999999;
+  float:left; 
+  display:inline;
+  align-items: center;
 }
 

@@ -4,6 +4,9 @@ const SLAAddItOnActivity = () => {
   return (
     <ActivityPage
       title="Add It On"
+      chipCategory="socialAwarenessCategory chip"
+      difficulty="Challenging"
+      time="10 min"
       overviewText={
         <div>
          This activity utilizes both turn-taking and active listening skills. 

@@ -4,6 +4,9 @@ const SMWalkSillyActivity = () => {
   return (
     <ActivityPage
       title="Walk Silly"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Simple"
+      time="10 min"
       overviewText={
         <div>
          Boost your child’s body awareness by playing a silly walking game with them. 
