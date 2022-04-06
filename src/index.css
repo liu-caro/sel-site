@@ -52,27 +52,22 @@ code {
 
 .responsibleDecisionMakingCategory {
   background-color: var(--turtleGreen);
-  min-width: 300px;
 }
 
 .selfAwarenessCategory {
   background-color: var(--dolphinBlue);
-  min-width: 300px;
 }
 
 .socialAwarenessCategory {
   background-color: var(--giraffeYellow);
-  min-width: 300px;
 }
 
 .relationshipSkillsCategory {
   background-color: var(--tigerRed);
-  min-width: 300px;
 }
 
 .selfManagementCategory {
   background-color: var(--lightHippoPurple);
-  min-width: 300px;
 }
 
 .categoryPageButton {
@@ -84,6 +79,7 @@ code {
   box-shadow: 0px 2px 4px #999999;
   color: var(--textColor);
   align-items: center;
+  min-width: 300px;
 }
 
 .activityPageButton {
