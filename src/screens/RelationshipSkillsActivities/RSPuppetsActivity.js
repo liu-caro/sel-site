@@ -4,6 +4,9 @@ const RSPuppetsActivity = () => {
   return (
     <ActivityPage
       title="Puppets"
+      chipCategory="relationshipSkillsCategory chip"
+      difficulty="Challenging"
+      time="20+ min"
       overviewText={
         <div>
          Make some sock puppets with your kid or find some stuffed animals and use them to reenact 

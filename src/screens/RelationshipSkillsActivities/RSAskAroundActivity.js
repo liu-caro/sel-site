@@ -4,6 +4,9 @@ const RSAskAroundActivity = () => {
   return (
     <ActivityPage
       title="Ask Around"
+      chipCategory="relationshipSkillsCategory chip"
+      difficulty="Simple"
+      time="5 min"
       overviewText={
         <div>
           Send your child to preschool with different questions to ask their peers. 

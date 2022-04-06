@@ -4,6 +4,9 @@ const RDMRewardsActivity = () => {
   return (
     <ActivityPage
       title="Rewards"
+      chipCategory="responsibleDecisionMakingCategory chip"
+      difficulty="Moderate"
+      time="20+ min"
       overviewText={
         <div>
          Create a Rewards chart. This can simply be a piece of construction paper with a title

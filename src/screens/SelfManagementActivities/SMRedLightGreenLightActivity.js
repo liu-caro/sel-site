@@ -4,6 +4,9 @@ const SMRedLightGreenLightActivity = () => {
   return (
     <ActivityPage
       title="Red Light, Green Light"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Moderate"
+      time="20+ min"
       overviewText={
         <div>
          Best played outside and with others, pick two points, a starting and finishing line, 

@@ -1,7 +1,6 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid, Typography, Chip } from '@mui/material';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-
 
 const CategoryPage = ({ activities, title, overviewText, importanceText, keySkillsText }) => {
 
@@ -36,15 +35,26 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
 
             </Grid>
 
-            {activities.map(([activityName, activityLink, buttonCategory]) => {
+            {activities.map(([activityName, difficulty, time, activityLink, buttonCategory]) => {
                 return (
                     <Grid item key={activityName} xs={12}>
-                        <Link to={activityLink} style={{ textDecoration: 'none' }}>
-                            <Button variant="contained" class={buttonCategory}>{activityName}</Button>
+                        <Link
+                            to={activityLink}
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Button
+                                variant='contained'
+                                class={buttonCategory}
+                                sx={{ width: 300 }}
+                            >
+                                {activityName}
+                                <br />
+                                <Chip sx={{ml:2, mt:1, fontFamily: 'Proxima Nova'}} label={difficulty}/>
+                                <Chip sx={{ml:1, mt:1, fontFamily: 'Proxima Nova'}} label={time}/>
+                            </Button>
                         </Link>
                     </Grid>
-                )
-            })}
+                )})}
         </Grid>
     );
 };

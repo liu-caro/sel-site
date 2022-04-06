@@ -4,6 +4,9 @@ const SFAMorningSunshineActivity = () => {
   return (
     <ActivityPage
       title="Morning Sunshine"
+      chipCategory="selfAwarenessCategory chip"
+      difficulty="Simple"
+      time="5 min"
       overviewText={
         <div>
          Ask your kid what “makes their sun shine today” in the mornings aka what are they grateful for or 

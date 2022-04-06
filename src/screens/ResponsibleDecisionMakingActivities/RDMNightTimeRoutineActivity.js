@@ -4,6 +4,9 @@ const RDMNightTimeRoutineActivity = () => {
   return (
     <ActivityPage
       title="Night Time Routine"
+      chipCategory="responsibleDecisionMakingCategory chip"
+      difficulty="Moderate"
+      time="20+ min"
       overviewText={
         <div>
          Work with your kid to create a nighttime routine that they are relatively motivated about. 

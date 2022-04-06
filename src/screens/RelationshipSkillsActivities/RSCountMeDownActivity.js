@@ -4,6 +4,9 @@ const RSCountMeDownActivity = () => {
   return (
     <ActivityPage
       title="Count Me Down"
+      chipCategory="relationshipSkillsCategory chip"
+      difficulty="Simple"
+      time="10 min"
       overviewText={
         <div>
           Count Me Down is a strategy from Move This World that helps students

@@ -4,6 +4,9 @@ const SFACrackASmileActivity = () => {
   return (
     <ActivityPage
       title="Crack A Smile"
+      chipCategory="selfAwarenessCategory chip"
+      difficulty="Moderate"
+      time="15 min"
       overviewText={
         <div>
         Much of communication is non-verbal and recognizing facial expressions is the first step 

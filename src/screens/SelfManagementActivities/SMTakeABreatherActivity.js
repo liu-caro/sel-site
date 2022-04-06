@@ -4,6 +4,9 @@ const SMTakeABreatherActivity = () => {
   return (
     <ActivityPage
       title="Take A Breather"
+      chipCategory="selfManagementCategory chip"
+      difficulty="Simple"
+      time="5 min"
       overviewText={
         <div>
          Practice slow, steady and mindful breathing with your child, particularly in times of stress. 
