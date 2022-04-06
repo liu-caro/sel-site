@@ -22,11 +22,11 @@ const useFirebaseDB = () => {
         }
     }, [curUserId, userActivityCount]);
 
-    const initializeUserData = (userId) => {
+    const initializeUserData = (userId, age) => {
         if (userId) {
-            console.log('fired', userId);
             set(ref(firebaseDB, 'users/' + userId), {
                 activityCount: 0,
+                age: age
                 // lastResetDate: lastResetDate
             });
         }

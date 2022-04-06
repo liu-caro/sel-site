@@ -9,6 +9,7 @@ import { useState } from 'react';
 import useFirebaseDB from '../hooks/useFirebaseDB';
 
 const SignupPage = () => {
+    const age = useInput('');
     const email = useInput('');
     const password = useInput('');
     const [error, setError] = useState();
@@ -64,6 +65,8 @@ const SignupPage = () => {
                         id='child-age'
                         label="Child's Age"
                         variant='filled'
+                        value={age.value}
+                        onChange={age.onChange}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -126,7 +129,7 @@ const SignupPage = () => {
                                     // Signed in
                                     const user = userCredential.user;
                                     console.log(user.uid);
-                                    initializeUserData(user.uid);
+                                    initializeUserData(user.uid, age.value);
                                     navigate('/onboarding-welcome');
                                 })
                                 .catch((error) => {
