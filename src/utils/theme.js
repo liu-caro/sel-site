@@ -1,7 +1,7 @@
 // Instructions
 // https://mui.com/customization/typography/
 
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Typography choices
 let sofiaProSoftMedium = 'Sofia Pro Soft Medium';
@@ -37,46 +37,55 @@ let darkHippoPurple = '#19004E';
 let theme = createTheme({
     typography: {
         h1: {
-            fontFamily: sofiaProSoftMedium, defaultType,
-            fontSize: h1Size
+            fontFamily: sofiaProSoftMedium,
+            defaultType,
+            fontSize: h1Size,
         },
         h2: {
-            fontFamily: sofiaProSoftRegular, defaultType,
-            fontSize: h2Size
+            fontFamily: sofiaProSoftRegular,
+            defaultType,
+            fontSize: h2Size,
         },
         h3: {
-            fontFamily: sofiaProSoftRegular, defaultType,
-            fontSize: h3Size
+            fontFamily: sofiaProSoftRegular,
+            defaultType,
+            fontSize: h3Size,
         },
         h4: {
-            fontFamily: sofiaProSoftRegular, defaultType,
-            fontSize: h4Size
+            fontFamily: sofiaProSoftRegular,
+            defaultType,
+            fontSize: h4Size,
         },
         h5: {
-            fontFamily: sofiaProSoftRegular, defaultType,
-            fontSize: h5Size
+            fontFamily: sofiaProSoftRegular,
+            defaultType,
+            fontSize: h5Size,
         },
         h6: {
-            fontFamily: sofiaProSoftRegular, defaultType,
-            fontSize: h6Size
+            fontFamily: sofiaProSoftRegular,
+            defaultType,
+            fontSize: h6Size,
         },
         paragraph: {
-            fontFamily: proximaNova, defaultType,
-            fontSize: paragraphSize
+            fontFamily: proximaNova,
+            defaultType,
+            fontSize: paragraphSize,
         },
         body1: {
-            fontFamily: proximaNova, defaultType,
-            fontSize: paragraphSize
+            fontFamily: proximaNova,
+            defaultType,
+            fontSize: paragraphSize,
         },
         button: {
-            fontFamily: sofiaProSoftRegular, defaultType,
-            fontSize: buttonSize
-        }
-    }
+            fontFamily: sofiaProSoftRegular,
+            defaultType,
+            fontSize: buttonSize,
+        },
+    },
 });
 theme = responsiveFontSizes(theme);
 
-export { 
+export {
     theme,
     turtleGreen,
     dolphinBlue,
@@ -92,5 +101,5 @@ export {
     darkDolphinBlue,
     darkGiraffeYellow,
     darkTigerRed,
-    darkHippoPurple
+    darkHippoPurple,
 };

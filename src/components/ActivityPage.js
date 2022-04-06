@@ -7,23 +7,40 @@ import HippoSVG from '../assets/sel-animals/HippoSVG.svg';
 import GiraffeSVG from '../assets/sel-animals/GiraffeSVG.svg';
 import TurtleSVG from '../assets/sel-animals/TurtleSVG.svg';
 import TigerSVG from '../assets/sel-animals/TigerSVG.svg';
+import { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { firebaseAuth } from '../firebase-config';
+import useFirebaseDB from '../hooks/useFirebaseDB';
 
-const ActivityPage = ({ title, difficulty, time, overviewText, directionsText, videoUrl, buttonCategory }) => {
+const confettiSettings = {
+  target: 'my-canvas',
+  props: [{ type: 'svg', src: DolphinSVG },
+  { type: 'svg', src: HippoSVG },
+  { type: 'svg', src: GiraffeSVG },
+  { type: 'svg', src: TurtleSVG },
+  { type: 'svg', src: TigerSVG }],
+  respawn: false,
+  clock: 100
+};
+
+
+const ActivityPage = ({ title, difficulty, time, chipCategory, overviewText, directionsText, videoUrl, buttonCategory }) => {
+  const {userActivityCount, updateUserData} = useFirebaseDB();
+  const [user] = useAuthState(firebaseAuth);
+  const [canvasDisplay, setCanvasDisplay] = useState('none');
 
   const handleClick = (() => {
-    const confettiSettings = {
-      target: 'my-canvas',
-      props: [{ type: 'svg', src: DolphinSVG },
-      { type: 'svg', src: HippoSVG },
-      { type: 'svg', src: GiraffeSVG },
-      { type: 'svg', src: TurtleSVG },
-      { type: 'svg', src: TigerSVG }],
-      respawn: false,
-      clock: 20
-    };
+    setCanvasDisplay('block');
 
-    const confetti = new ConfettiGenerator(confettiSettings);
+  const confetti = new ConfettiGenerator(confettiSettings);
     confetti.render();
+    if (user) {
+      updateUserData(user.uid, userActivityCount);
+    }
+    setTimeout(()=>{
+      confetti.clear(); 
+      setCanvasDisplay('none');
+    }, 1000);
   });
 
   return (
@@ -35,9 +52,11 @@ const ActivityPage = ({ title, difficulty, time, overviewText, directionsText, v
       spacing={2}
       p={4}
     >
-        <Grid item xs={12}>
-          <Typography variant="h1">{title}</Typography>
-        </Grid>
+       <canvas id='my-canvas' style={{ position: 'absolute', display: canvasDisplay }} /> 
+
+      <Grid item xs={12}>
+        <Typography variant="h1">{title}</Typography>
+      </Grid>
 
         <Grid item xs={12}>
           <Chip label={difficulty} class={chipCategory} />
@@ -65,7 +84,7 @@ const ActivityPage = ({ title, difficulty, time, overviewText, directionsText, v
         </Grid>
 
         <Grid item xs={12}>
-          <Button variant="contained" class={buttonCategory}>Mark as done!</Button>
+          <Button variant="contained" class={buttonCategory} onClick={handleClick}>Mark as done!</Button>
         </Grid>
     </Grid>
   );

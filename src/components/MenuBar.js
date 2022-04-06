@@ -1,21 +1,26 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
+import {
+    AppBar,
+    Box,
+    Button,
+    Container,
+    IconButton,
+    Menu,
+    MenuItem,
+    Toolbar,
+    Typography,
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { firebaseAuth } from '../firebase-config';
+import { signOut } from 'firebase/auth';
 
-const pages = [
-    ['Home', '/home']
-];
+const pages = [['Home', '/home']];
 
 const ResponsiveAppBar = () => {
+    const [user] = useAuthState(firebaseAuth);
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
@@ -132,7 +137,26 @@ const ResponsiveAppBar = () => {
                             </div>
                         ))}
                     </Box>
-
+                    {user ? (
+                        <Button
+                            variant='contained'
+                            class='landingOnboardingButton'
+                            disableRipple={true}
+                            onClick={() => signOut(firebaseAuth)}
+                        >
+                            Log out
+                        </Button>
+                    ) : (
+                        <Link to='/signup' style={{ textDecoration: 'none' }}>
+                            <Button
+                                variant='contained'
+                                class='landingOnboardingButton'
+                                disableRipple={true}
+                            >
+                                Sign up / Log in
+                            </Button>
+                        </Link>
+                    )}
                 </Toolbar>
             </Container>
         </AppBar>

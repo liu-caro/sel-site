@@ -1,17 +1,19 @@
 import { Grid, Typography } from '@mui/material';
 import { LinearProgressWithLabel } from '../components/LinearProgressWithLabel';
 import SelCard from '../components/SelCard';
-import { useState } from 'react';
 import DolphinPNG from '../assets/sel-animals/DolphinPNG.png';
 import HippoPNG from '../assets/sel-animals/HippoPNG.png';
 import GiraffePNG from '../assets/sel-animals/GiraffePNG.png';
 import TurtlePNG from '../assets/sel-animals/TurtlePNG.png';
 import TigerPNG from '../assets/sel-animals/TigerPNG.png';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { firebaseAuth } from '../firebase-config';
+import useFirebaseDB from '../hooks/useFirebaseDB';
 
 const ActivitiesPage = () => {
 
-  const [activityCount, setActivityCount] = useState(3);
-  const [signin, setSignin] = useState(true);
+  const {userActivityCount} = useFirebaseDB();
+  const [user] = useAuthState(firebaseAuth);
 
   return (
     <Grid
@@ -23,10 +25,10 @@ const ActivitiesPage = () => {
       p={8}
     >
       
-      {signin ?
+      {user ?
         <Grid item xs={12}>
           <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month</Typography>
-          <LinearProgressWithLabel variant='determinate' value={activityCount * 20} />
+          <LinearProgressWithLabel variant='determinate' value={userActivityCount * 20} />
         </Grid>
         :
         <Grid item xs={12}>

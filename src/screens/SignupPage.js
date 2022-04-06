@@ -6,13 +6,16 @@ import { firebaseAuth } from '../firebase-config';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import useInput from '../hooks/useInput';
 import { useState } from 'react';
+import useFirebaseDB from '../hooks/useFirebaseDB';
 
 const SignupPage = () => {
+    const age = useInput('');
     const email = useInput('');
     const password = useInput('');
     const [error, setError] = useState();
     let navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
+    const { initializeUserData } = useFirebaseDB();
     return (
         <Grid
             container
@@ -62,6 +65,8 @@ const SignupPage = () => {
                         id='child-age'
                         label="Child's Age"
                         variant='filled'
+                        value={age.value}
+                        onChange={age.onChange}
                     />
                 </Grid>
                 <Grid item xs={12}>
@@ -123,7 +128,8 @@ const SignupPage = () => {
                                 .then((userCredential) => {
                                     // Signed in
                                     const user = userCredential.user;
-                                    console.log(user);
+                                    console.log(user.uid);
+                                    initializeUserData(user.uid, age.value);
                                     navigate('/onboarding-welcome');
                                 })
                                 .catch((error) => {
@@ -131,8 +137,8 @@ const SignupPage = () => {
                                     const errorMessage = error.message;
                                     console.log(
                                         'Error occured with ' +
-                                            { errorCode } +
-                                            { errorMessage }
+                                            errorCode +
+                                            errorMessage
                                     );
                                     setError({ errorCode, errorMessage });
                                 })

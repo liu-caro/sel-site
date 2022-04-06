@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import MuiCard from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 const SelCard = ({
@@ -25,7 +24,7 @@ const SelCard = ({
                         <br />
                         <Typography variant='body1'>{description}</Typography>
                         <br />
-                        <img src={animal} width={'25%'} height={'25%'} style={{float: 'right'}}/>
+                        <img src={animal} width={'25%'} alt={'animal-icon'} height={'25%'} style={{float: 'right'}}/>
                     </CardContent>
                 </MuiCard>
             </Link>
