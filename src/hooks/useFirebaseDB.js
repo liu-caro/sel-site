@@ -1,29 +1,43 @@
 import { useState, useEffect } from 'react';
 import { firebaseDB } from '../firebase-config';
 import { set, ref, onValue } from 'firebase/database';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { firebaseAuth } from '../firebase-config';
 
-const useFirebaseDB = (userId) => {
+const useFirebaseDB = () => {
+    const [user] = useAuthState(firebaseAuth);
     const [userActivityCount, setUserActivityCount] = useState([]);
+    const curUserId = user ? user.uid : '';
 
     useEffect(() => {
-        const userActivityCountRef = ref(firebaseDB, 'users/' + userId + '/activityCount');
-        onValue(userActivityCountRef, (snapshot) => {
-            const data = snapshot.val();
-            setUserActivityCount(data);
-        });
-    }, [userId, userActivityCount]);
+        if (curUserId) {
+            const userActivityCountRef = ref(
+                firebaseDB,
+                'users/' + curUserId + '/activityCount'
+            );
+            onValue(userActivityCountRef, (snapshot) => {
+                const data = snapshot.val();
+                setUserActivityCount(data);
+            });
+        }
+    }, [curUserId, userActivityCount]);
 
-    const initializeUserData = () => {
-        set(ref(firebaseDB, 'users/' + userId), {
-            activityCount: 0,
-            // lastResetDate: lastResetDate
-        });
+    const initializeUserData = (userId) => {
+        if (userId) {
+            console.log('fired', userId);
+            set(ref(firebaseDB, 'users/' + userId), {
+                activityCount: 0,
+                // lastResetDate: lastResetDate
+            });
+        }
     };
 
-    const updateUserData = (activityCount) => {
-        set(ref(firebaseDB, 'users/' + userId), {
-            activityCount: activityCount,
-        });
+    const updateUserData = (userId, activityCount) => {
+        if (userId) {
+            set(ref(firebaseDB, 'users/' + userId), {
+                activityCount: activityCount,
+            });
+        }
     };
 
     // const resetUserData = (userId, lastResetDate) => {

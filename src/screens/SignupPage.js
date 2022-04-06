@@ -6,6 +6,7 @@ import { firebaseAuth } from '../firebase-config';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import useInput from '../hooks/useInput';
 import { useState } from 'react';
+import useFirebaseDB from '../hooks/useFirebaseDB';
 
 const SignupPage = () => {
     const email = useInput('');
@@ -13,6 +14,8 @@ const SignupPage = () => {
     const [error, setError] = useState();
     let navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
+
+    const { initializeUserData } = useFirebaseDB();
     return (
         <Grid
             container
@@ -123,7 +126,8 @@ const SignupPage = () => {
                                 .then((userCredential) => {
                                     // Signed in
                                     const user = userCredential.user;
-                                    console.log(user);
+                                    console.log(user.uid);
+                                    initializeUserData(user.uid);
                                     navigate('/onboarding-welcome');
                                 })
                                 .catch((error) => {
@@ -131,8 +135,8 @@ const SignupPage = () => {
                                     const errorMessage = error.message;
                                     console.log(
                                         'Error occured with ' +
-                                            { errorCode } +
-                                            { errorMessage }
+                                            errorCode +
+                                            errorMessage
                                     );
                                     setError({ errorCode, errorMessage });
                                 })
