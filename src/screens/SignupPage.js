@@ -14,7 +14,6 @@ const SignupPage = () => {
     const [error, setError] = useState();
     let navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
-
     const { initializeUserData } = useFirebaseDB();
     return (
         <Grid

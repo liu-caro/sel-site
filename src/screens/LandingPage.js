@@ -1,7 +1,12 @@
 import { Grid, Typography, Button, Card, CardContent } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { firebaseAuth } from '../firebase-config';
+import { signOut } from 'firebase/auth';
 
 const LandingPage = () => {
+    const [user] = useAuthState(firebaseAuth);
+
     return (
         <div>
             <Grid
@@ -37,25 +42,43 @@ const LandingPage = () => {
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Link
-                        to='/signup'
-                        style={{ textDecoration: 'none', marginRight: 10 }}
-                    >
+                    {user ? (
                         <Button
                             variant='contained'
                             class='landingOnboardingButton'
+                            onClick={() => signOut(firebaseAuth)}
                         >
-                            Sign up
+                            Log out
                         </Button>
-                    </Link>
-                    <Link to='/login' style={{ textDecoration: 'none' }}>
-                        <Button
-                            variant='contained'
-                            class='landingOnboardingButton'
-                        >
-                            Log in
-                        </Button>
-                    </Link>
+                    ) : (
+                        <div>
+                            <Link
+                                to='/signup'
+                                style={{
+                                    textDecoration: 'none',
+                                    marginRight: 10,
+                                }}
+                            >
+                                <Button
+                                    variant='contained'
+                                    class='landingOnboardingButton'
+                                >
+                                    Sign up
+                                </Button>
+                            </Link>
+                            <Link
+                                to='/login'
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <Button
+                                    variant='contained'
+                                    class='landingOnboardingButton'
+                                >
+                                    Log in
+                                </Button>
+                            </Link>
+                        </div>
+                    )}
                 </Grid>
             </Grid>
 
