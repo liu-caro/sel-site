@@ -42,7 +42,6 @@ import RDMWhatWouldYouDoActivity from './screens/ResponsibleDecisionMakingActivi
 
 import OnboardingWelcomePage from "./screens/OnboardingPages/OnboardingWelcomePage";
 import OnboardingActivitiesPage from "./screens/OnboardingPages/OnboardingActivitiesPage";
-import ExamplePage from './screens/ExamplePage';
 import LandingPage from './screens/LandingPage';
 import SignupPage from './screens/SignupPage';
 import LoginPage from './screens/LoginPage';
@@ -108,7 +107,6 @@ const App = () => {
           <Route path="/rdm/rewards" element={<RDMRewardsActivity />} />
           <Route path="/rdm/what-would-you-do" element={<RDMWhatWouldYouDoActivity />} />
 
-          <Route path="/example" element={<ExamplePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="*" element={<LandingPage />} />
 
