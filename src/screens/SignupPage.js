@@ -9,7 +9,6 @@ import { useState } from 'react';
 import useFirebaseDB from '../hooks/useFirebaseDB';
 
 const SignupPage = () => {
-    const age = useInput('');
     const email = useInput('');
     const password = useInput('');
     const [error, setError] = useState();
@@ -43,8 +42,7 @@ const SignupPage = () => {
                 <Typography variant='body2' align='left'>
                     Users can browse all activities without an account, but with
                     an account you can keep track of your child’s progress in
-                    SEL skills and we can recommend activities which are best
-                    suited for your child’s age!
+                    SEL skills!
                 </Typography>
                 <br />
                 <Typography variant='body2' align='left'>
@@ -59,16 +57,6 @@ const SignupPage = () => {
                 style={{ maxWidth: 500 }}
                 justifyContent='center'
             >
-                <Grid item xs={12}>
-                    <TextField
-                        fullWidth
-                        id='child-age'
-                        label="Child's Age"
-                        variant='filled'
-                        value={age.value}
-                        onChange={age.onChange}
-                    />
-                </Grid>
                 <Grid item xs={12}>
                     <TextField
                         fullWidth
@@ -129,7 +117,7 @@ const SignupPage = () => {
                                     // Signed in
                                     const user = userCredential.user;
                                     console.log(user.uid);
-                                    initializeUserData(user.uid, age.value);
+                                    initializeUserData(user.uid);
                                     navigate('/onboarding-welcome');
                                 })
                                 .catch((error) => {
