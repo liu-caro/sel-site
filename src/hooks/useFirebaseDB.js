@@ -35,7 +35,7 @@ const useFirebaseDB = () => {
     const updateUserData = (userId, activityCount) => {
         if (userId) {
             set(ref(firebaseDB, 'users/' + userId), {
-                activityCount: activityCount,
+                activityCount: activityCount + 1,
             });
         }
     };
