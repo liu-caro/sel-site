@@ -72,7 +72,7 @@ const useFirebaseDB = () => {
 
             set(ref(firebaseDB, 'users/' + userId), {
                 activityCount: 0,
-                lastResetDate: lastDay.getTime(),
+                nextResetDate: lastDay.getTime(),
             });
         }
     };
