@@ -20,7 +20,7 @@ const SMGroundedInAGoodWayActivity = () => {
           
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/SUgUP0OrtQU"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );

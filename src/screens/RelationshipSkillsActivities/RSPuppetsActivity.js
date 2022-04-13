@@ -25,7 +25,7 @@ const RSPuppetsActivity = () => {
           Or let your kid take the lead and let their creativity flow
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/04PpoI98HFA"
       buttonCategory="relationshipSkillsCategory activityPageButton"
     />
   );

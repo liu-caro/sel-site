@@ -24,7 +24,7 @@ const SFACrackASmileActivity = () => {
        
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/KeKEDqz7dSQ"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );
