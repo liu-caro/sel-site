@@ -21,7 +21,7 @@ const SFAMakeAFaceActivity = () => {
        
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/C0YgDXnWNYY"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );

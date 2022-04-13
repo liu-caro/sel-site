@@ -20,7 +20,7 @@ const RDMWhatWouldYouDoActivity = () => {
           
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/kFJnej_SAfk"
       buttonCategory="responsibleDecisionMakingCategory activityPageButton"
     />
   );

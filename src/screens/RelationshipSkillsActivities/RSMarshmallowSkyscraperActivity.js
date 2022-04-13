@@ -18,7 +18,7 @@ const RSMarshmallowSkyscraperActivity = () => {
          
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/PxrpL-Ei5N4"
       buttonCategory="relationshipSkillsCategory activityPageButton"
     />
   );

@@ -22,7 +22,7 @@ const RDMRewardsActivity = () => {
          
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/P9xMx8xFI5s"
       buttonCategory="responsibleDecisionMakingActivity activityPageButton"
     />
   );

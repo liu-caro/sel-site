@@ -21,7 +21,7 @@ const SLATakeYourTurnActivity = () => {
        
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/jDS9PsS86C8"
       buttonCategory="socialAwarenessCategory activityPageButton"
     />
   );

@@ -19,7 +19,7 @@ const RSPeekABooActivity = () => {
          
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/Z37Ru-GRtks"
       buttonCategory="relationshipSkillsCategory activityPageButton"
     />
   );

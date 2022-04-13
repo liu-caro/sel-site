@@ -26,7 +26,7 @@ const SMSnackAttackActivity = () => {
           hour after I finish my work).
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/QX_oy9614HQ"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );

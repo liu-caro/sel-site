@@ -18,7 +18,7 @@ const SFAJournalingActivity = () => {
        
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/Gt_8PQJK0rM"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );

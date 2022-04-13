@@ -20,7 +20,7 @@ const SMRedLightGreenLightActivity = () => {
           
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/4vPep4MB_8A"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );
