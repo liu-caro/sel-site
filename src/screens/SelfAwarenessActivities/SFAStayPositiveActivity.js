@@ -19,7 +19,7 @@ const SFAStayPositiveActivity = () => {
           I am good at having fun). Put it somewhere visible and repeat it to them from time to time.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/lXjIhSiAgJg"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );

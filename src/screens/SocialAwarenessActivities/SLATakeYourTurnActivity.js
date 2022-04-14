@@ -20,7 +20,7 @@ const SLATakeYourTurnActivity = () => {
           The listener has to repeat the sound and guess the animal, then it’s their turn to make a sound.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/jDS9PsS86C8"
       buttonCategory="socialAwarenessCategory activityPageButton"
     />
   );

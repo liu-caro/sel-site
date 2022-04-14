@@ -20,7 +20,7 @@ const SMTakeABreatherActivity = () => {
           this with a short beginner slow-flow yoga video that you can do together.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/gwfkTbcOyBs"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );

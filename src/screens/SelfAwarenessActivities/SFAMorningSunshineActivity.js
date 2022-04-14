@@ -19,7 +19,7 @@ const SFAMorningSunshineActivity = () => {
           and add to every day.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/94zhaB9bJqI"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );

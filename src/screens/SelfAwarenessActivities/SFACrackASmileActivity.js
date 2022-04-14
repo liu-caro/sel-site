@@ -26,7 +26,7 @@ const SFACrackASmileActivity = () => {
           The next time your kid tells you a story, ask them to point out which drawing made them feel.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/KeKEDqz7dSQ"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );

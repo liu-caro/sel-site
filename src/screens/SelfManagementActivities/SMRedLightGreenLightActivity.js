@@ -21,7 +21,7 @@ const SMRedLightGreenLightActivity = () => {
           you say red light. Anyone caught still running is out and the last person in wins!
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/4vPep4MB_8A"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );

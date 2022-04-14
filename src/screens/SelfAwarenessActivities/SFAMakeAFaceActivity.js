@@ -21,7 +21,7 @@ const SFAMakeAFaceActivity = () => {
           and your child can easily see and reflect on the faces they are making.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/C0YgDXnWNYY"
       buttonCategory="selfAwarenessCategory activityPageButton"
     />
   );

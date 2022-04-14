@@ -20,7 +20,7 @@ const SMFreezeDanceActivity = () => {
           makes it through 10 rounds without being caught unfrozen wins!
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/2UcZWXvgMZE"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );

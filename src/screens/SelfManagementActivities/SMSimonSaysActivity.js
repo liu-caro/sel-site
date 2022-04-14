@@ -19,7 +19,7 @@ const SMSimonSaysActivity = () => {
           and not getting tripped up when someone doesn’t say “Simon says” before a command.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/OkO8DaPIyXo"
       buttonCategory="selfManagementCategory activityPageButton"
     />
   );

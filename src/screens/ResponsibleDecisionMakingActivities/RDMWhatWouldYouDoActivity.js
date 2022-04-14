@@ -19,7 +19,7 @@ const RDMWhatWouldYouDoActivity = () => {
           to explain their answers and correct them if their response wouldn’t be appropriate.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/kFJnej_SAfk"
       buttonCategory="responsibleDecisionMakingCategory activityPageButton"
     />
   );

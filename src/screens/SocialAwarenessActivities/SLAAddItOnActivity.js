@@ -20,7 +20,7 @@ const SLAAddItOnActivity = () => {
           add another part. This goes back and forth until someone forgets a part.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/wQEeukEe2vE"
       buttonCategory="socialAwarenessCategory activityPageButton"
     />
   );
