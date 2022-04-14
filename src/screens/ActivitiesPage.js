@@ -9,21 +9,20 @@ import TigerPNG from '../assets/sel-animals/TigerPNG.png';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { firebaseAuth } from '../firebase-config';
 import useFirebaseDB from '../hooks/useFirebaseDB';
-import { useEffect, useRef } from 'react';
 
 const ActivitiesPage = () => {
-    const { userActivityCount, monthlyReset, userNextResetDate } =
+    const { userActivityCount } =
         useFirebaseDB();
     const [user] = useAuthState(firebaseAuth);
 
-    const magicRef = useRef();
-    magicRef.current = monthlyReset;
+    // const magicRef = useRef();
+    // magicRef.current = monthlyReset;
 
-    useEffect(() => {
-        if (user) {
-            magicRef.current(user.uid, userNextResetDate);
-        }
-    }, [user, userNextResetDate]);
+    // useEffect(() => {
+    //     if (user) {
+    //         magicRef.current(user.uid, userNextResetDate);
+    //     }
+    // }, [user, userNextResetDate]);
 
     return (
         <Grid
