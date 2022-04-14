@@ -9,13 +9,13 @@ const SFAJournalingActivity = () => {
       time="15 min"
       overviewText={
         <div>
-         While your kid may be too young to write, they can start a daily journal drawing of their day. 
-         Assist them in adding any words they would like to include.
+          Journaling is a great way for anyone to express their emotions.
         </div>
       }
       directionsText={
         <div>
-       
+          While your kid may be too young to write, they can start a daily journal drawing of their day.
+          Assist them in adding any words they would like to include.
         </div>
       }
       videoUrl="https://youtu.be/4S2yj4TB_I8"

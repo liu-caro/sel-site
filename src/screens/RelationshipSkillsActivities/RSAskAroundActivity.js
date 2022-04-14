@@ -9,15 +9,14 @@ const RSAskAroundActivity = () => {
       time="5 min"
       overviewText={
         <div>
-          Send your child to preschool with different questions to ask their peers. 
-          For example: “What are your friends' favorite colors? You should try asking them today”. 
-          This will help take interest in other students and engage with them in a way that will 
-          lead to conversations and potential friendships.
+          This activity will help your child take interest in other students and engage with 
+          them in a way that will lead to conversations and potential friendships.
         </div>
       }
       directionsText={
         <div>
-                   
+          Send your child to preschool with different questions to ask their peers.
+          For example: “What are your friends' favorite colors? You should try asking them today”.
         </div>
       }
       videoUrl="https://youtu.be/4S2yj4TB_I8"

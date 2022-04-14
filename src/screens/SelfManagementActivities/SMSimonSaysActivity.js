@@ -9,15 +9,14 @@ const SMSimonSaysActivity = () => {
       time="15 min"
       overviewText={
         <div>
-         Take turns between you and your kid playing as Simon and try to get the whole family 
-         involved. Kids can practice following the commands of Simon as quickly as they can 
-         and not getting tripped up when someone doesn’t say “Simon says” before a command. 
-         This will not only help increase body awareness but also aid in active listening.  
+          Simon Says is a fun game that will not only help increase body awareness but also aid in active listening.
         </div>
       }
       directionsText={
         <div>
-          
+          Take turns between you and your kid playing as Simon and try to get the whole family
+          involved. Kids can practice following the commands of Simon as quickly as they can
+          and not getting tripped up when someone doesn’t say “Simon says” before a command.
         </div>
       }
       videoUrl="https://youtu.be/4S2yj4TB_I8"
