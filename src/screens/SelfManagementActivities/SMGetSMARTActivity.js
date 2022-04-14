@@ -9,14 +9,13 @@ const SMGetSMARTActivity = () => {
       time="5 min"
       overviewText={
         <div>
-         Set a SMART (Specific, Measurable, Agreed-Upon, Relevant, and Time-Bound) goal for the day, week, or month. 
-         (Example: brushing your teeth without being asked every day for a week). Consider a small reward upon accomplishment 
-         like a sweet treat or visit to the park.  
+          Set a SMART (Specific, Measurable, Agreed-Upon, Relevant, and Time-Bound) goal for the day, week, or month.
         </div>
       }
       directionsText={
         <div>
-          
+          Example: brushing your teeth without being asked every day for a week. Consider a small reward upon accomplishment
+          like a sweet treat or visit to the park.
         </div>
       }
       videoUrl="https://youtu.be/Iyl_v-O_Cds"
