@@ -7,6 +7,7 @@ import { firebaseAuth } from '../firebase-config';
 const useFirebaseDB = () => {
     const [user] = useAuthState(firebaseAuth);
     const [userActivityCount, setUserActivityCount] = useState([]);
+    const [userNextResetDate, setUserNextResetDate] = useState();
     const curUserId = user ? user.uid : '';
 
     useEffect(() => {
@@ -22,11 +23,31 @@ const useFirebaseDB = () => {
         }
     }, [curUserId, userActivityCount]);
 
+    useEffect(() => {
+        if (curUserId) {
+            const userNextResetDatetRef = ref(
+                firebaseDB,
+                'users/' + curUserId + '/nextResetDate'
+            );
+            onValue(userNextResetDatetRef, (snapshot) => {
+                const data = snapshot.val();
+                setUserNextResetDate(data);
+            });
+        }
+    }, [curUserId, userNextResetDate]);
+
     const initializeUserData = (userId) => {
         if (userId) {
+            const date = new Date();
+            const lastDay = new Date(
+                date.getFullYear(),
+                date.getMonth() + 1,
+                0
+            );
+
             set(ref(firebaseDB, 'users/' + userId), {
                 activityCount: 0,
-                // lastResetDate: lastResetDate
+                nextResetDate: lastDay.getTime(),
             });
         }
     };
@@ -39,14 +60,30 @@ const useFirebaseDB = () => {
         }
     };
 
-    // const resetUserData = (userId, lastResetDate) => {
-    //     set(ref(firebaseDB, 'users/' + userId), {
-    //         activityCount: 0,
-    //         lastResetDate: lastResetDate
-    //     });
-    // };
+    const monthlyReset = (userId, resetDate) => {
+        const today = new Date();
+        if (userId && resetDate < today.getTime()) {
+            const date = new Date();
+            const lastDay = new Date(
+                date.getFullYear(),
+                date.getMonth() + 1,
+                0
+            );
 
-    return { userActivityCount, initializeUserData, updateUserData };
+            set(ref(firebaseDB, 'users/' + userId), {
+                activityCount: 0,
+                nextResetDate: lastDay.getTime(),
+            });
+        }
+    };
+
+    return {
+        userActivityCount,
+        userNextResetDate,
+        initializeUserData,
+        updateUserData,
+        monthlyReset,
+    };
 };
 
 export default useFirebaseDB;
