@@ -14,6 +14,9 @@ const ActivitiesPage = () => {
 
   const {userActivityCount} = useFirebaseDB();
   const [user] = useAuthState(firebaseAuth);
+  const monthGoal = 5;
+  const metMonthGoal = userActivityCount === monthGoal;
+  const progressIncrement = 100 / monthGoal;
 
   return (
     <Grid
@@ -27,8 +30,12 @@ const ActivitiesPage = () => {
       
       {user ?
         <Grid item xs={12}>
-          <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month</Typography>
-          <LinearProgressWithLabel variant='determinate' value={userActivityCount * 20} />
+          {metMonthGoal ? 
+            <Typography variant="subtitle2" align='center'>You've completed 5 activities for the month!</Typography>
+            :
+            <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month</Typography>
+          }
+          <LinearProgressWithLabel variant='determinate' value={userActivityCount * progressIncrement} />
         </Grid>
         :
         <Grid item xs={12}>
