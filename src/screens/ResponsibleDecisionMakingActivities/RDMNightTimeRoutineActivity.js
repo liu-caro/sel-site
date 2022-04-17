@@ -9,19 +9,23 @@ const RDMNightTimeRoutineActivity = () => {
       time="20+ min"
       overviewText={
         <div>
-         Work with your kid to create a nighttime routine that they are relatively motivated about. 
-         This will strengthen responsible decision-making and encourage self-efficacy in their activities 
-         of daily living. Categories could include: brushing teeth, bath time, getting dressed in pajamas, 
-         etc. Make sure to note the benefits of these activities, not getting cavities or having extra energy 
-         for the next day to play. If it helps, you could even write down and post the routine on the bathroom mirror.
+          Work with your kid to create a nighttime routine that they are relatively motivated about.
+          This will strengthen responsible decision-making and encourage self-efficacy in their activities
+          of daily living.
         </div>
       }
       directionsText={
         <div>
-       
+          <ul>
+            <li>Think of categories that can be included in a nighttime routine (brushing teeth,
+              bath time, getting dressed in pajamas...
+            </li>
+            <li>Highlight the benefits of each activities (not getting cavities, having extra eneregy for tomorrow to play)</li>
+            <li>If it helps, you could even write down and post the routine on the bathroom mirror</li>
+          </ul>
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/eDMH1OolPXA"
       buttonCategory="responsibleDecisionMakingCategory activityPageButton"
     />
   );

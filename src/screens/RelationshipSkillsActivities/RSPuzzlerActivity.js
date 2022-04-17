@@ -25,7 +25,7 @@ const RSPuzzlerActivity = () => {
           </ul>
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/VnF_kByAoB0"
       buttonCategory="relationshipSkillsCategory activityPageButton"
     />
   );

@@ -9,16 +9,17 @@ const RSMarshmallowSkyscraperActivity = () => {
       time="20+ min"
       overviewText={
         <div>
-        Work together to build a tower with your kid out of spaghetti and marshmallows and see 
-        how high you can make it. Alternatively, you could also use cards.
+          This activity aims to promote teamwork and cooperation as you and your child
+          challenge yourselves to balance different materials while communicating.
         </div>
       }
       directionsText={
         <div>
-         
+          Work together to build a tower with your kid out of spaghetti and marshmallows and see
+          how high you can make it. Alternatively, you could also use cards.
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/PxrpL-Ei5N4"
       buttonCategory="relationshipSkillsCategory activityPageButton"
     />
   );

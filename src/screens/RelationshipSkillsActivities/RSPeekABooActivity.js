@@ -16,10 +16,15 @@ const RSPeekABooActivity = () => {
 
       directionsText={
         <div>
-         
+         <ul>
+           <li>Sit yourself close to your child</li>
+           <li>Cover your face with your hands, a blanket or a toy</li>
+           <li>Dramatically reveal your face and say in a happy voice "Peek-a-boo!"</li>
+           <li>Repeat until your child is comfortable, then they can participate with you</li>
+         </ul>
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/Z37Ru-GRtks"
       buttonCategory="relationshipSkillsCategory activityPageButton"
     />
   );

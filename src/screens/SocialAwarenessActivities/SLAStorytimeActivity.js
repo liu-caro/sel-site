@@ -25,7 +25,7 @@ const SLAStorytimeActivity = () => {
           </ul>
         </div>
       }
-      videoUrl="https://youtu.be/4S2yj4TB_I8"
+      videoUrl="https://youtu.be/KKMFZ87W9DI"
       buttonCategory="socialAwarenessCategory activityPageButton"
     />
   );
