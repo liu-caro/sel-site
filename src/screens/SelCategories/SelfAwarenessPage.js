@@ -15,21 +15,18 @@ const SelfAwarenessPage = () => {
       title="Self Awareness"
       overviewText={
         <div>
-          <p>
-            This skill is about learning to understand oneself. By understanding their emotions, children are less overwhelmed
-            when they do experience a strong emotion. In fact, research shows that simply labeling our emotions (also known as
-            affect labeling) can reduce the psychological stress that may come with them. Understanding our emotions is also the
-            first step we must take before moving on to ways of dealing with them. A child that is prepared for strong emotions will
-            be much more accepting of help.
-          </p>
-          <p>
-            Self-awareness also plays a role in self-expression. Children need to be aware of how to both show and say their feelings 
-            in a way that is helpful to those around them as a part of communication.
-          </p>
+          This skill is about learning to understand oneself. By understanding their emotions, children are less overwhelmed
+          when they do experience a strong emotion. Self-awareness also plays a role in self-expression. Children need to be
+          aware of how to both show and say their feelings
+          in a way that is helpful to those around them as a part of communication.
         </div>
       }
       importanceText={
-        <div></div>
+        <div>
+          In fact, research shows that simply labeling our emotions (also known as
+          affect labeling) can reduce the psychological stress that may come with them. Understanding our emotions is also the
+          first step we must take before moving on to ways of dealing with them. A child that is prepared for strong emotions will
+          be much more accepting of help.</div>
       }
       keySkillsText={
         <div>

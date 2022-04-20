@@ -16,19 +16,15 @@ const SelfManagementPage = () => {
     <CategoryPage
       title="Self Management"
       overviewText={
-        <div>
-          <p>Learning to deal with our emotions in a good way is very important and will be helpful throughout a child's whole life.
-            By practicing techniques that help calm their stress, children can focus on school, friends and family. Children who are good
-            at self regulating are better at overcoming challenges in life.
-          </p>
-          <p>
-            Self management also includes skills outside of regulation such as planning and organization. Practice with setting goals and
-            sticking to them is important for kids to develop their own motivation and self discipline.
-          </p>
+        <div>Learning to deal with our emotions in a good way is very important and will be helpful throughout a child's whole life.
+          Self management also includes skills outside of regulation such as planning and organization. Practice with setting goals and
+          sticking to them is important for kids to develop their own motivation and self discipline.
         </div>
       }
       importanceText={
         <div>
+          By practicing techniques that help calm their stress, children can focus on school, friends and family. Children who are good
+          at self regulating are better at overcoming challenges in life.
         </div>
       }
       keySkillsText={
