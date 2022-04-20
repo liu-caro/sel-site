@@ -14,8 +14,8 @@ const RelationshipSkillsPage = () => {
       title="Relationship Skills"
       overviewText={
         <div>
-          Developing positive, healthy relationships are very helpful for children. 
-          They can be a source of support and positivity in your child's life that 
+          Developing positive, healthy relationships is very helpful for children. 
+          Relationships can be a source of support and positivity in your child's life that 
           will improve their well being. 
         </div>
       }

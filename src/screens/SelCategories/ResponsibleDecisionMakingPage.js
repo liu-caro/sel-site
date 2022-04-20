@@ -16,9 +16,9 @@ const ResponsibleDecisionMakingPage = () => {
           By reflecting on situations after they happen, your child will understand 
           how important consequences are and how they work. They will learn that 
           sometimes it is better to plan ahead rather than act on impulses and sometimes 
-          they have to make their decisions based on others rather than themselves (Example: 
-          I should not steal that girl's toys, even though I want it, because it would be wrong 
-          and it would make her sad). 
+          they have to make their decisions based on others rather than themselves. For example,
+          <i> I should not steal that girl's toys, even though I want it, because it would be wrong 
+          and it would make her sad. </i>
         </div>
       }
       importanceText={
