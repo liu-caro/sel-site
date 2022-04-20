@@ -1,11 +1,26 @@
-import { Grid, Typography, Button, Card, CardContent } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import { Grid, Typography, Button, Card, CardContent, useMediaQuery } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { firebaseAuth } from '../firebase-config';
 import { signOut } from 'firebase/auth';
+import logo from '../assets/logo-white.png';
 
 const LandingPage = () => {
     const [user] = useAuthState(firebaseAuth);
+    const theme = useTheme();
+    const sm = useMediaQuery(theme.breakpoints.up('sm'));
+    const md = useMediaQuery(theme.breakpoints.up('md'));
+
+    const logoSize = () => {
+        if (md) {
+            return '15%';
+        } else if (sm) {
+            return '20%';
+        } else {
+            return '30%';
+        }
+    }
 
     return (
         <div>
@@ -25,13 +40,7 @@ const LandingPage = () => {
                 }}
             >
                 <Grid item xs={12} pb={2}>
-                    <Typography
-                        variant='h2'
-                        align='center'
-                        style={{ color: 'white' }}
-                    >
-                        Social Emotional Learning (SEL)
-                    </Typography>
+                    <img src={logo} alt="Logo" height={logoSize()} width={logoSize()} align='center' style={{'margin-left': 'auto', 'margin-right': 'auto', 'display': 'block'}} />
                     <Typography
                         variant='h6'
                         align='center'
