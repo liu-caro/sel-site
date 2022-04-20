@@ -1,5 +1,5 @@
-import { Grid, Typography, Chip } from "@mui/material";
-import Button from "@mui/material/Button";
+import { Grid, Typography, Chip } from '@mui/material';
+import Button from '@mui/material/Button';
 import ReactPlayer from 'react-player';
 import ConfettiGenerator from 'confetti-js';
 import DolphinSVG from '../assets/sel-animals/DolphinSVG.svg';
@@ -11,83 +11,109 @@ import { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { firebaseAuth } from '../firebase-config';
 import useFirebaseDB from '../hooks/useFirebaseDB';
+import { useNavigate } from 'react-router-dom';
 
 const confettiSettings = {
-  target: 'my-canvas',
-  props: [{ type: 'svg', src: DolphinSVG },
-  { type: 'svg', src: HippoSVG },
-  { type: 'svg', src: GiraffeSVG },
-  { type: 'svg', src: TurtleSVG },
-  { type: 'svg', src: TigerSVG }],
-  respawn: false,
-  clock: 100
+    target: 'my-canvas',
+    props: [
+        { type: 'svg', src: DolphinSVG },
+        { type: 'svg', src: HippoSVG },
+        { type: 'svg', src: GiraffeSVG },
+        { type: 'svg', src: TurtleSVG },
+        { type: 'svg', src: TigerSVG },
+    ],
+    respawn: false,
+    clock: 100,
 };
 
+const ActivityPage = ({
+    title,
+    difficulty,
+    time,
+    chipCategory,
+    overviewText,
+    directionsText,
+    videoUrl,
+    buttonCategory,
+}) => {
+    const { userActivityCount, updateUserData } = useFirebaseDB();
+    const [user] = useAuthState(firebaseAuth);
+    const [canvasDisplay, setCanvasDisplay] = useState('none');
 
-const ActivityPage = ({ title, difficulty, time, chipCategory, overviewText, directionsText, videoUrl, buttonCategory }) => {
-  const {userActivityCount, updateUserData} = useFirebaseDB();
-  const [user] = useAuthState(firebaseAuth);
-  const [canvasDisplay, setCanvasDisplay] = useState('none');
+    let navigate = useNavigate();
 
-  const handleClick = (() => {
-    setCanvasDisplay('block');
+    const handleClick = () => {
+        setCanvasDisplay('block');
 
-  const confetti = new ConfettiGenerator(confettiSettings);
-    confetti.render();
-    if (user) {
-      updateUserData(user.uid, userActivityCount);
-    }
-    setTimeout(()=>{
-      confetti.clear(); 
-      setCanvasDisplay('none');
-    }, 1000);
-  });
+        const confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+        if (user) {
+            updateUserData(user.uid, userActivityCount);
+        }
+        setTimeout(() => {
+            confetti.clear();
+            setCanvasDisplay('none');
+        }, 1000);
 
-  return (
-    <Grid
-      container
-      direction="column"
-      justifyContent="center"
-      alignItems="center"
-      spacing={2}
-      p={4}
-    >
-       <canvas id='my-canvas' style={{ position: 'absolute', display: canvasDisplay }} /> 
+        setTimeout(() => {
+            navigate('/home');
+        }, 2000);
+    };
 
-      <Grid item xs={12}>
-        <Typography variant="h1">{title}</Typography>
-      </Grid>
+    return (
+        <Grid
+            container
+            direction='column'
+            justifyContent='center'
+            alignItems='center'
+            spacing={2}
+            p={4}
+        >
+            <canvas
+                id='my-canvas'
+                style={{ position: 'absolute', display: canvasDisplay }}
+            />
 
-        <Grid item xs={12}>
-          <Chip label={difficulty} class={chipCategory} />
-          <Chip label={time} class={chipCategory} />
+            <Grid item xs={12}>
+                <Typography variant='h1'>{title}</Typography>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Chip label={difficulty} class={chipCategory} />
+                <Chip label={time} class={chipCategory} />
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='body1'> {overviewText} </Typography>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='h2'>Directions</Typography>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='body1'> {directionsText} </Typography>
+            </Grid>
+
+            <Grid item xs={12}>
+                <Typography variant='h2'>Instructional Video</Typography>
+            </Grid>
+
+            <Grid item xs={6}>
+                <ReactPlayer url={videoUrl} style={{ maxWidth: '300px' }} />
+            </Grid>
+
+            <Grid item xs={12}>
+                <Button
+                    variant='contained'
+                    class={buttonCategory}
+                    onClick={handleClick}
+                >
+                    Mark as done!
+                </Button>
+            </Grid>
         </Grid>
-        
-        <Grid item xs={12}>
-          <Typography variant="body1"> {overviewText} </Typography>
-        </Grid>
-      
-        <Grid item xs={12}>
-          <Typography variant="h2">Directions</Typography>
-        </Grid>
-        
-        <Grid item xs={12}>
-          <Typography variant="body1"> {directionsText} </Typography>
-        </Grid>
-        
-        <Grid item xs={12}>
-          <Typography variant="h2">Instructional Video</Typography>
-        </Grid>
-
-        <Grid item xs={6}>
-          <ReactPlayer url={videoUrl} style={{ maxWidth: '300px'}}/>
-        </Grid>
-
-        <Grid item xs={12}>
-          <Button variant="contained" class={buttonCategory} onClick={handleClick}>Mark as done!</Button>
-        </Grid>
-    </Grid>
-  );
+    );
 };
 
 export default ActivityPage;
