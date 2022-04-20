@@ -18,16 +18,18 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
                 <Typography variant="h1" align='center'>{title}</Typography>
             </Grid>
 
-            <Grid item xs={12}>
-                <Typography paragraph>{overviewText}</Typography>
-            </Grid>
+            <Grid container alignItems="left">
+                <Grid item xs={12}>
+                    <Typography paragraph>{overviewText}</Typography>
+                </Grid>
 
-            <Grid item xs={12}>
-                <Typography paragraph>{importanceText}</Typography>
-            </Grid>
+                <Grid item xs={12}>
+                    <Typography paragraph>{importanceText}</Typography>
+                </Grid>
 
-            <Grid item xs={12}>
-                <Typography paragraph>{keySkillsText}</Typography>
+                <Grid item xs={12}>
+                    <Typography paragraph>{keySkillsText}</Typography>
+                </Grid>
             </Grid>
 
             <Grid item xs={12}>
@@ -49,12 +51,13 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
                             >
                                 {activityName}
                                 <br />
-                                <Chip sx={{ml:2, mt:1, fontFamily: 'Proxima Nova'}} label={difficulty}/>
-                                <Chip sx={{ml:1, mt:1, fontFamily: 'Proxima Nova'}} label={time}/>
+                                <Chip sx={{ ml: 2, mt: 1, fontFamily: 'Proxima Nova' }} label={difficulty} />
+                                <Chip sx={{ ml: 1, mt: 1, fontFamily: 'Proxima Nova' }} label={time} />
                             </Button>
                         </Link>
                     </Grid>
-                )})}
+                )
+            })}
         </Grid>
     );
 };
