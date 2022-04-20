@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@mui/system';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import MenuBar from './components/MenuBar';
 import HomePage from './screens/HomePage';
 import ActivitiesPage from './screens/ActivitiesPage';
@@ -51,6 +52,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        <ScrollToTop />
         <MenuBar />
         <Routes>
           {/* home page */}
