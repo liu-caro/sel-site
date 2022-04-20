@@ -47,7 +47,7 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
                             <Button
                                 variant='contained'
                                 class={buttonCategory}
-                                sx={{ width: 300 }}
+                                sx={{ width: 250 }}
                             >
                                 {activityName}
                                 <br />
