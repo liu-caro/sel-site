@@ -14,6 +14,8 @@ const ActivitiesPage = () => {
     const { userActivityCount } =
         useFirebaseDB();
     const [user] = useAuthState(firebaseAuth);
+    const monthGoal = 5;
+    const metMonthGoal = userActivityCount >= monthGoal;
 
     // const magicRef = useRef();
     // magicRef.current = monthlyReset;
@@ -33,23 +35,20 @@ const ActivitiesPage = () => {
             spacing={2}
             p={8}
         >
-            {user ? (
-                <Grid item xs={12}>
-                    <Typography variant='subtitle2' align='center'>
-                        Please complete 5 activities for the month
-                    </Typography>
-                    <LinearProgressWithLabel
-                        variant='determinate'
-                        value={userActivityCount * 20}
-                    />
-                </Grid>
-            ) : (
-                <Grid item xs={12}>
-                    <Typography variant='subtitle2' align='center'>
-                        Please sign in to have your activity progress save!
-                    </Typography>
-                </Grid>
-            )}
+          {user ?
+        <Grid item xs={12}>
+          {metMonthGoal ? 
+            <Typography variant="subtitle2" align='center'>Good job! You've completed 5 or more activities this month!</Typography>
+            :
+            <Typography variant="subtitle2" align='center'>Please complete 5 activities for the month.</Typography>
+          }
+          <LinearProgressWithLabel variant='determinate' value={userActivityCount * 20} />
+        </Grid>
+        :
+        <Grid item xs={12}>
+          <Typography variant="subtitle2" align='center'>Please sign in to have your activity progress save!</Typography>
+        </Grid>
+      }
 
             <Grid item xs={12}>
                 <Typography variant='h1' align='center'>
