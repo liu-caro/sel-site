@@ -9,9 +9,9 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
             container
             direction="column"
             justifyContent="center"
-            alignItems="center"
+            alignItems="left"
             spacing={2}
-            p={8}
+            p={6}
         >
 
             <Grid item xs={12}>

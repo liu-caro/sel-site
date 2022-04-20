@@ -9,40 +9,33 @@ const SelfAwarenessPage = () => {
     ['Mountain, River, Valley', 'Simple', '10 min', '/sfa/mountain-river-valley', 'selfAwarenessCategory categoryPageButton'],
     ['Stay Positive', 'Simple', '15 min', '/sfa/stay-positive', 'selfAwarenessCategory categoryPageButton']
   ];
-  
+
   return (
     <CategoryPage
       title="Self Awareness"
       overviewText={
         <div>
-          Self Awareness is the ability to understand our own emotions, thoughts, and values 
-          along with the ability to understand how they impact our behavior. 
+          <p>
+            This skill is about learning to understand one’s self. By understanding their emotions, children are less overwhelmed
+            when they do experience a strong emotion. In fact, research shows that simply labeling our emotions (also known as
+            affect labeling) can reduce the psychological stress that may come with them. Understanding our emotions is also the
+            first step we must take before moving on to ways of dealing with them. A child that is prepared for strong emotions will
+            be much more accepting of help.
+          </p>
+          <p>
+            Self-awareness also plays a role in self-expression. Children need to be aware of how to both show and say their feelings 
+            in a way that is helpful to those around them as a part of communication
+          </p>
         </div>
       }
       importanceText={
-        <div>
-          It is essential to:
-          <ul>
-            <li>Building our self confidence</li>
-            <li>Recognizing, identifying and expressing our emotions</li>
-            <li>Understanding our self-perception accurately</li>
-          </ul>
-        </div>
+        <div></div>
       }
       keySkillsText={
         <div>
-          It includes the capacities to:
-          <ul>
-            <li>Express a range of emotions through gestures, language, or actions</li>
-            <li>Begin to develop a rich vocabulary related to feelings</li>
-            <li>Identify personal characteristics such as abilities, preferences, interests</li>
-            <li>Recognize our self as a unique individual</li>
-            <li>Feel confident in our ability to accomplish tasks</li>
-            <li>Try new experiences such as new foods and activities</li>
-          </ul>
         </div>
       }
-      activities = {sfaActivities}
+      activities={sfaActivities}
     />
   );
 };

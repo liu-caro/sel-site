@@ -12,30 +12,21 @@ const ResponsibleDecisionMakingPage = () => {
       title="Responsible Decision Making"
       overviewText={
         <div>
-          Responsible Decision Making consists of the abilities to make caring and
-          constructive choices about our behavior and social interactions across 
-          different situations.
+          Learning how to make responsible decisions is a very important skill. 
+          By reflecting on situations after they happen, your child will understand 
+          how important consequences are and how they work. They will learn that 
+          sometimes it is better to plan ahead rather than act on impulses and sometimes 
+          they have to make their decisions based on others rather than themselves (Example: 
+          I should not steal that girl's toys, even though I want it, because it would be wrong 
+          and it would make her sad). 
         </div>
       }
       importanceText={
         <div>
-          It is essential to:
-          <ul>
-            <li>Helping us understand our personal, social, and ethical responsibilities</li>
-            <li>Reflecting on the results of our actions and choices</li>
-          </ul>
         </div>
       }
       keySkillsText={
         <div>
-          It includes the capacities to:
-          <ul>
-            <li>Demonstrate open-mindedness</li>
-            <li>Make reasonable judgment after looking at faccts</li>
-            <li>Anticipate consequences of our actions</li>
-            <li>Follow rules and understand the reasoning for them</li>
-            <li>Identify problems and potential solutions</li>
-          </ul>
         </div>
       }
       activities = {rdmActivities}
