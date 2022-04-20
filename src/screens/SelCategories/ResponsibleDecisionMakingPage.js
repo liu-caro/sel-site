@@ -27,6 +27,12 @@ const ResponsibleDecisionMakingPage = () => {
       }
       keySkillsText={
         <div>
+          The ability to make responsible decisions helps your child:
+          <ul>
+            <li>Follow rules and understand why they exist</li>
+            <li>Think about the outcomes of their actions</li>
+            <li>Explore different possible solutions to a problem</li>
+          </ul>
         </div>
       }
       activities={rdmActivities}

@@ -21,11 +21,17 @@ const SocialAwarenessPage = () => {
       importanceText={
         <div>It may be a couple of years or more before your child shows interest
           in other children, but helping develop this skill early on will allow
-          them to understand that we don’t just learn from teachers and books, but 
+          them to understand that we don’t just learn from teachers and books, but
           from friends too!</div>
       }
       keySkillsText={
-        <div></div>
+        <div>Social Awareness allows us to:
+          <ul>
+            <li>Say "please" and "thank you"</li>
+            <li>Understand what makes each person unique</li>
+            <li>Learn from others</li>
+          </ul>
+        </div>
       }
       activities={slaActivities}
     />

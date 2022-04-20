@@ -30,6 +30,12 @@ const SelfAwarenessPage = () => {
       }
       keySkillsText={
         <div>
+          Self Awareness can help your child:
+          <ul>
+            <li>Try new things like food and activities</li>
+            <li>Express themself physically and vocally</li>
+            <li>Feel confident</li>
+          </ul>
         </div>
       }
       activities={sfaActivities}

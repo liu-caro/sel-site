@@ -29,6 +29,12 @@ const SelfManagementPage = () => {
       }
       keySkillsText={
         <div>
+          Practicing self-management helps your child:
+          <ul>
+            <li>Tackle challenging situations</li>
+            <li>Know when to use their indoor voice</li>
+            <li>Make changes in their thinking and actions</li>
+          </ul>
         </div>
       }
       activities={smActivities}
