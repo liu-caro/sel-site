@@ -8,43 +8,35 @@ const RelationshipSkillsPage = () => {
     ['Puppets', 'Challenging', '20+ min', '/rs/puppets', 'relationshipSkillsCategory categoryPageButton'],
     ['Puzzler', 'Simple', '20+ min', '/rs/puzzler', 'relationshipSkillsCategory categoryPageButton']
   ];
-  
+
   return (
     <CategoryPage
       title="Relationship Skills"
       overviewText={
         <div>
-          Relationship Skills is the ability to understand the
-          perspectives of others and empathize (including those from a differing
-          backgrounds to one’s own).
+          Developing positive, healthy relationships is very helpful for children. 
+          Relationships can be a source of support and positivity in your child's life that 
+          will improve their well being. 
         </div>
       }
       importanceText={
         <div>
-          It is essential to:
-          <ul>
-            <li>Helping us build and maintain meaningful
-              connections across race, culture, age, and distance</li>
-            <li>Supporting one another during collective grief and struggle</li>
-            <li>Collaboratively finding solutions to new obstacles</li>
-          </ul>
+          Practicing these skills will help your child build strong relationships 
+          that will continue to benefit them throughout their life.
         </div>
       }
       keySkillsText={
         <div>
-          It includes the capacities to:
+          There are many skills that go into making 
+          a successful relationship, such as:
           <ul>
-            <li>Communicate clearly</li>
-            <li>Listen actively</li>
-            <li>Cooperate</li>
-            <li>Work collaboratively to problem solve and negotiate conflict constructively</li>
-            <li>Navigate settings with differing social and cultural demands and opportunities</li>
-            <li>Provide leadership</li>
-            <li>Seek or offer help when needed</li>
+            <li>Communication</li>
+            <li>Problem Resolution</li>
+            <li>Active Listening</li>
           </ul>
         </div>
       }
-      activities = {rsActivities}
+      activities={rsActivities}
     />
   );
 };

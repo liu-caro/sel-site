@@ -11,37 +11,33 @@ const SelfManagementPage = () => {
     ['Take A Breather', 'Simple', '5 min', '/sm/take-a-breather', 'selfManagementCategory categoryPageButton'],
     ['Walk Silly', 'Simple', '10 min', '/sm/walk-silly', 'selfManagementCategory categoryPageButton']
   ];
-  
+
   return (
     <CategoryPage
       title="Self Management"
       overviewText={
-        <div>
-          Self Management the ability to manage our emotions, thoughts, and behaviors
-          effectively in differnet situations to achieve goals.
+        <div>Learning to deal with our emotions in a good way is very important and will be helpful throughout a child's whole life.
+          Self management also includes skills outside of regulation such as planning and organization. Practice with setting goals and
+          sticking to them is important for kids to develop their own motivation and self discipline.
         </div>
       }
       importanceText={
         <div>
-          It is essential to:
-          <ul>
-            <li>Building effective stress management strategies</li>
-            <li>Exhibiting self-discipline and self-motivation</li>
-            <li>Setting personal goals and following a plan to accomplish them</li>
-          </ul>
+          By practicing techniques that help calm their stress, children can focus on school, friends and family. Children who are good
+          at self regulating are better at overcoming challenges in life.
         </div>
       }
       keySkillsText={
         <div>
-          It includes the capacities to:
+          Practicing self-management helps your child:
           <ul>
-            <li>Use positive skills to deal with challenging situations</li>
-            <li>Adjust behaviors appropriate in different settings</li>
-            <li>Make changes in our thinking or actions</li>
+            <li>Tackle challenging situations</li>
+            <li>Know when to use their indoor voice</li>
+            <li>Make changes in their thinking and actions</li>
           </ul>
         </div>
       }
-      activities = {smActivities}
+      activities={smActivities}
     />
   );
 };

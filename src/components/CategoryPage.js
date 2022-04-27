@@ -45,16 +45,17 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
                             <Button
                                 variant='contained'
                                 class={buttonCategory}
-                                sx={{ width: 300 }}
+                                sx={{ width: 250 }}
                             >
                                 {activityName}
                                 <br />
-                                <Chip sx={{ml:2, mt:1, fontFamily: 'Proxima Nova'}} label={difficulty}/>
-                                <Chip sx={{ml:1, mt:1, fontFamily: 'Proxima Nova'}} label={time}/>
+                                <Chip sx={{ ml: 2, mt: 1, fontFamily: 'Proxima Nova' }} label={difficulty} />
+                                <Chip sx={{ ml: 1, mt: 1, fontFamily: 'Proxima Nova' }} label={time} />
                             </Button>
                         </Link>
                     </Grid>
-                )})}
+                )
+            })}
         </Grid>
     );
 };
