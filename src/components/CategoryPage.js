@@ -18,18 +18,16 @@ const CategoryPage = ({ activities, title, overviewText, importanceText, keySkil
                 <Typography variant="h1" align='center'>{title}</Typography>
             </Grid>
 
-            <Grid container alignItems="left" pt={2}>
-                <Grid item xs={12}>
-                    <Typography paragraph>{overviewText}</Typography>
-                </Grid>
+            <Grid item xs={12}>
+                <Typography paragraph>{overviewText}</Typography>
+            </Grid>
 
-                <Grid item xs={12}>
-                    <Typography paragraph>{importanceText}</Typography>
-                </Grid>
+            <Grid item xs={12}>
+                <Typography paragraph>{importanceText}</Typography>
+            </Grid>
 
-                <Grid item xs={12}>
-                    <Typography paragraph>{keySkillsText}</Typography>
-                </Grid>
+            <Grid item xs={12}>
+                <Typography paragraph>{keySkillsText}</Typography>
             </Grid>
 
             <Grid item xs={12}>
